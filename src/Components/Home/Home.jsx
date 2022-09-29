@@ -10,6 +10,7 @@ import {
     CardBody,
     Button,
   } from "@material-tailwind/react";
+import Offers from "../Offers/Offers";
 
 export default function Home() {
     const swipe = [
@@ -80,6 +81,8 @@ export default function Home() {
             })
         }
         </div>
+
+        <Offers/>
     </div>
   )
 }
