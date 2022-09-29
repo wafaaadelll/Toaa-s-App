@@ -11,6 +11,7 @@ import {
     Button,
   } from "@material-tailwind/react";
 import Offers from "../Offers/Offers";
+import Products from "../Products/Products";
 
 export default function Home() {
     const swipe = [
@@ -43,7 +44,7 @@ export default function Home() {
         }
     ]
   return (
-    <div className="mx-auto text-center">
+    <div className="mx-auto text-center pt-20">
         <Swiper navigation  = {true}
         modules     = {[Navigation]}
         loop        = {true}
@@ -52,12 +53,12 @@ export default function Home() {
             delay               : 1500,
             disableOnInteraction: false,
           }}
-        className="mySwiper">
+        className="mySwiper w-full">
             {
                 swipe.map((img)=>{
                     return(
                         <SwiperSlide>
-                            <img src={img.link} alt="" className="" />
+                            <img src={img.link} alt="" />
                         </SwiperSlide>
                     )
                 })
@@ -83,6 +84,7 @@ export default function Home() {
         </div>
 
         <Offers/>
+        <Products/>
     </div>
   )
 }

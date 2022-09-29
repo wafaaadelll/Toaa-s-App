@@ -9,7 +9,10 @@ export default function Nav() {
         {title:"Contact" , link:"/Contact"},
     ]
   return (
-    <div>
+    <div className='Nav'>
+      <nav className='bg-red-600 text-gray-50 text-center'>
+        <p><strong>For Contact</strong>+20111223456</p>
+      </nav>
       <nav className="bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
