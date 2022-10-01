@@ -12,8 +12,12 @@ import {
   } from "@material-tailwind/react";
 import Offers from "../Offers/Offers";
 import Products from "../Products/Products";
+import AOS from 'aos'
+import Swipe from "../Swiper/Swipe";
+import 'aos/dist/aos.css';
 
 export default function Home() {
+    AOS.init();
     const swipe = [
         {
             link:"Images/s1.jfif"
@@ -64,7 +68,7 @@ export default function Home() {
                 })
             }
       </Swiper>
-      <div class="container mx-auto space-y-2 lg:space-y-0 lg:gap-10 lg:grid lg:grid-cols-3 mt-5 " style={{"width":"85%"}}>
+      <div data-aos="fade-up" class="container mx-auto space-y-2 lg:space-y-0 lg:gap-10 lg:grid lg:grid-cols-3 mt-5 " style={{"width":"85%"}}>
         {
             products.map((product)=>{
                 return(
@@ -85,6 +89,7 @@ export default function Home() {
 
         <Offers/>
         <Products/>
+        <Swipe/>
     </div>
   )
 }

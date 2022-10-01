@@ -1,0 +1,10 @@
+.image {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+.containe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
