@@ -18,8 +18,8 @@ export default function Products() {
   };
   AOS.init()
   return (
-    <div data-aos="fade-up" data-aos-delay="500"
-    data-aos-duration="2000" style={{"width":"85%"}} className="mt-7 mx-auto">
+    <div data-aos="fade-up" data-aos-delay="100"
+    data-aos-duration="1000" style={{"width":"85%"}} className="mt-7 mx-auto">
         <div className='mb-7'>
             <h2 className='text-3xl'><strong>Bags & Hand Made</strong></h2>
             <p className='text-sm text-gray-400 w-1/3 mt-2 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perspiciatis?</p>

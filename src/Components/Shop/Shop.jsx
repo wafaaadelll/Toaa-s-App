@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
@@ -8,28 +8,13 @@ import { Link } from 'react-router-dom'
 import "./Shop.css"
 import ShopButtons from '../ShopFilter/ShopButtons'
 import ShopFilter from '../ShopFilter/ShopFilter'
+import ShopSort from '../ShopFilter/ShopSort'
 
+const postsPerPage = 3;
+let arrayForHoldingPosts = [];
 
 export default function Shop() {
 
-const sortOptions = [
-  { name: 'Most Popular', href: '#', current: true },
-  { name: 'Best Rating', href: '#', current: false },
-  { name: 'Newest', href: '#', current: false },
-  { name: 'Price: Low to High', href: '#', current: false },
-  { name: 'Price: High to Low', href: '#', current: false },
-]
-const subCategories = [
-  { name: 'Totes', href: '#' },
-  { name: 'Backpacks', href: '#' },
-  { name: 'Travel Bags', href: '#' },
-  { name: 'Hip Bags', href: '#' },
-  { name: 'Laptop Sleeves', href: '#' },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 const [item, setItem] = useState(Product);
 
@@ -41,6 +26,21 @@ const filterItem = (curcat) => {
   });
   setItem(newItem);
 };
+useEffect(()=>{
+  setItem(item)
+},[])
+function LowToHigh (){
+  const sortData = [...item].sort((a,b)=>{
+      return a.price > b.price ? 1 :-1
+  })
+  setItem(sortData)
+}
+function HighToLow (){
+  const sortData = [...item].sort((a,b)=>{
+      return a.price < b.price ? 1 :-1
+  })
+  setItem(sortData)
+}
   return (
 <div className="bg-white">
       <div>
@@ -120,24 +120,9 @@ const filterItem = (curcat) => {
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
-                      {sortOptions.map((option) => (
-                        <Menu.Item key={option.name}>
-                          {({ active }) => (
-                            <a
-                              href={option.href}
-                              className={classNames(
-                                option.current ? 'font-medium text-gray-900' : 'text-gray-500',
-                                active ? 'bg-gray-100' : '',
-                                'block px-4 py-2 text-sm'
-                              )}
-                            >
-                              {option.name}
-                            </a>
-                          )}
-                        </Menu.Item>
-                      ))}
+                      <ShopSort LowToHigh={LowToHigh} HighToLow={HighToLow}/>
                     </div>
                   </Menu.Items>
                 </Transition>
