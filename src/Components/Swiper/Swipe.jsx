@@ -15,8 +15,8 @@ export default function Swipe() {
   SwiperCore.use([Autoplay]);
   AOS.init()
   return (
-    <div className="mt-7 swipe h-96 flex items-center	" data-aos="fade-up" data-aos-delay="500"
-    data-aos-duration="2000">
+    <div className="mt-7 swipe h-96 flex items-center	" data-aos="fade-up" data-aos-delay="100"
+    data-aos-duration="1000">
         <Swiper
         slidesPerView={5}
         loop={true}

@@ -7,9 +7,10 @@ export default function Item() {
     const { productId } = useParams();
   const thisProduct = Product.find((prod) => prod.id === productId);
   return (
-    <div className='mx-auto pt-40 flex items-center justify-between 'style={{"width":"85%"}} >      
-<div className="overflow-x-auto relative shadow-md sm:rounded-lg w-5/12">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <div className='mx-auto pt-40 flex items-center justify-between'style={{"width":"85%"}} >
+        <div className='w-6/12 mx-auto'>
+        <div className="overflow-x-auto relative shadow-md sm:rounded-lg ">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="py-3 px-6">
@@ -55,13 +56,15 @@ export default function Item() {
           </tr>
         </tbody>
     </table>
+    </div> 
     <div>
-      <h2 className='text-gray-400'>Price</h2>
+      <h2 className='text-gray-600 font-bold inline-block mt-5 text-2xl'>Price</h2>
+      <button type="button" class="cursor-default bg-gradient-to-r from-red-600 to-gray-300 text-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-4 py-1.5 ml-5 mb-2">{thisProduct.price} $</button>
     </div>
-</div> 
+        </div>
           <Carousel
             data={thisProduct.thumbnail}
-            width="300px"
+            width="350px"
             height="400px"
             radius="10px"
             thumbnails={true}
@@ -69,7 +72,7 @@ export default function Item() {
             showNavBtn={true}
             style={{
               textAlign: "center",
-              maxWidth: "850px",
+              maxWidth: "100%",
               margin: "auto",
               position: "relative",
             }}

@@ -1,9 +1,9 @@
 export default [
     {
         id: "1",
-        title: "Labore eumperspiciatis quia libero",
+        title: "Aabore eumperspiciatis quia libero",
         category: "pags",
-        price: 4022.22,
+        price: 5022.22,
         img: `${require("../Components/Images/s1.jfif")}`,
         thumbnail: [{
           image:
@@ -16,7 +16,7 @@ export default [
       },
     {
         id: "2",
-        title: "Labore eumperspiciatis quia libero",
+        title: "Cabore eumperspiciatis quia libero",
         category: "hand made",
         price: 4022.22,
         img: `${require("../Components/Images/s4.jfif")}`,
@@ -31,7 +31,7 @@ export default [
       },
     {
         id: "3",
-        title: "Labore eumperspiciatis quia libero",
+        title: "Babore eumperspiciatis quia libero",
         category: "pags",
         price: 4022.22,
         img: `${require("../Components/Images/s3.jfif")}`,
@@ -48,7 +48,7 @@ export default [
         id: "4",
         title: "Labore eumperspiciatis quia libero",
         category: "hand made",
-        price: 4022.22,
+        price: 3022.22,
         img: `${require("../Components/Images/s2.jfif")}`,
         thumbnail: [{
           image:
@@ -93,7 +93,7 @@ export default [
         id: "7",
         title: "Labore eumperspiciatis quia libero",
         category: "pags",
-        price: 4022.22,
+        price: 6022.22,
         img: `${require("../Components/Images/s2.jfif")}`,
         thumbnail: [{
           image:
@@ -123,7 +123,7 @@ export default [
         id: "9",
         title: "Labore eumperspiciatis quia libero",
         category: "pags",
-        price: 4022.22,
+        price: 8022.22,
         img: `${require("../Components/Images/s2.jfif")}`,
         thumbnail: [{
           image:
