@@ -4,15 +4,37 @@ export default [
     title: "Labore eumperspiciatis quia libero",
     category: "Bags",
     price: 4022.22,
-    img: `${require("../Components/Images/s1.jfif")}`,
-    thumbnail: [{
+    img: `${require("../Components/Images/B1.jfif")}`,
+    thumbnail: [
+      {
       image:
-        `${require("../Components/Images/s1.jfif")}`,
+        `${require("../Components/Images/B10.jfif")}`,
     },
-    {
+      {
       image:
-        `${require("../Components/Images/p3.jfif")}`,
-    }]
+        `${require("../Components/Images/B11.jfif")}`,
+    },
+      {
+      image:
+        `${require("../Components/Images/B13.jfif")}`,
+    },
+      {
+      image:
+        `${require("../Components/Images/B15.jfif")}`,
+    },
+      {
+      image:
+        `${require("../Components/Images/B16.jfif")}`,
+    },
+      {
+      image:
+        `${require("../Components/Images/B17.jfif")}`,
+    },
+      {
+      image:
+        `${require("../Components/Images/B18.jfif")}`,
+    },
+    ]
   },
   {
     id: "2",

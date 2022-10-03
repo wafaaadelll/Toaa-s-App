@@ -10,7 +10,7 @@ export default function Cards({ item }) {
                 return(
                     <div class="w-full rounded hover:shadow-2xl bg-gray-100 text-left ">
                         <div className='contain h-60 w-80'>
-                        <img src={product.img} alt="image" className='h-60 w-80 img' />
+                        <img src={product.img} alt="image" className='img' />
                         <div class="overlay">
                             <Link to={`/Item/${product.id}`} className='button text-white bg-gray-400 p-1 bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-gray-800'>Show Details</Link>
                         </div>

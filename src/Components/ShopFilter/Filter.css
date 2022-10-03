@@ -1,7 +1,7 @@
 .image {
     display: block;
-    width: 80%;
-    height: auto;
+   width: 350px;
+   height: 100%;
 }
 .containe {
     display: flex;
@@ -34,6 +34,6 @@
         left: 19%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        transform: translate(-45%, -50%);
         text-align: center;
   }
