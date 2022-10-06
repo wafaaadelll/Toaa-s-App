@@ -1,8 +1,9 @@
 .headtext{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
         display: inline-block;
         padding: 0 125px;
+        color: #824444;
+        text-shadow: 2px 2px 6px #824444;
 }
 .headtext:after,.headtext:before {
     content: '';
@@ -23,4 +24,7 @@
 .headtext:before {
     content: '';
     left: 0;
+}
+.font {
+font-family: "Dancing Script";
 }

@@ -13,3 +13,9 @@
 .navbar .swiper-rtl .swiper-button-next {
         color: gray;
 }
+.topnav{
+    background-color: #eeeece;
+}
+.bottonav{
+    background-color: #824444;
+}

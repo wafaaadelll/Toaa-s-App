@@ -20,7 +20,7 @@ export default function Nav() {
   return (
     <div>
       <div className="Nav">
-        <nav className="bg-gray-200 py-1.5">
+        <nav className="topnav py-1.5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="hidden md:block">
               <div className="justify-center flex items-baseline space-x-4">
@@ -154,15 +154,15 @@ export default function Nav() {
             className="navbar mx-auto"
           >
             <SwiperSlide className="font-semibold text-gray-600">
-              <span className="text-red-600">NOTE : </span>WE CAN MAKE ANY
+              <span className="text-topcolor">NOTE : </span>WE CAN MAKE ANY
               DESIGN YOU WANT
             </SwiperSlide>
             <SwiperSlide className="font-semibold text-gray-600">
-              <span className="text-red-600">NOTE : </span>YOU CAN CHOOSE WHAY
+              <span className="text-topcolor">NOTE : </span>YOU CAN CHOOSE WHAY
               COLOR TO BE
             </SwiperSlide>
             <SwiperSlide className="font-semibold text-gray-600">
-              <span className="text-red-600">NOTE : </span>HAPPY TO HELP YOU
+              <span className="text-topcolor">NOTE : </span>HAPPY TO HELP YOU
             </SwiperSlide>
           </Swiper>{" "}
         </nav>
@@ -172,13 +172,13 @@ export default function Nav() {
         <div className="flex-shrink-0">
           <img
             className="h-24 w-44 mx-auto"
-            src={"Images/logo.PNG"}
-            alt="Workflow"
+            src={"../Images/logo.png"}
+            alt="LOGO"
           />
           {/* test */}
         </div>
       </nav>
-      <nav className="bg-red-600 text-gray-50 text-center py-1">
+      <nav className="text-gray-50 text-center py-1 bottonav">
         <p>
           <strong>For Contact</strong>+20111223456
         </p>

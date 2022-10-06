@@ -15,7 +15,7 @@ export default function ShopFilter({ item }) {
           {item.map((product, index) => {
             return (
               <div
-                className="w-full rounded hover:shadow-2xl text-left containe"
+                className="w-full rounded hover:shadow-2xl text-left containe relative"
                 key={index}
               >
                 <div className="containe h-60">
@@ -40,6 +40,13 @@ export default function ShopFilter({ item }) {
                     {product.price} $
                   </button>
                 </div>
+                {product.offer ? (
+                  <div className="bg-red-500 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center offer">
+                    <p className="text-white my-2.5">Offer</p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             );
           })}

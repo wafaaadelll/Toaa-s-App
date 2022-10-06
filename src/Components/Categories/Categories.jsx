@@ -23,7 +23,7 @@ export default function Categories({ naming }) {
       data-aos-delay="100"
       data-aos-duration="1000"
     >
-      <h2 className="text-left font-bold text-3xl text-gray-600 my-5 underline">
+      <h2 className="text-left font-bold text-3xl text-gray-600 my-5 font">
         {naming}
       </h2>
       <div>
@@ -43,11 +43,18 @@ export default function Categories({ naming }) {
         >
           {Product.map((ele, index) => {
             return ele.category === naming ? (
-              <div key={index}>
+              <div key={index} className="relative">
                 <SwiperSlide>
                   <NavLink to={`/item/${ele.id}`}>
                     <img src={ele.img} alt="" className="w-96 h-60 hoverimg" />
                   </NavLink>
+                  {ele.offer ? (
+                    <div className="bg-red-500 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center offer">
+                      <p className="text-white my-2.5">Offer</p>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </SwiperSlide>
               </div>
             ) : (

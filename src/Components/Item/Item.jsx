@@ -6,15 +6,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./Item.css";
 import "swiper/css";
 import "swiper/css/navigation";
-
-import { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
 
 export default function Item() {
   const { productId } = useParams();
   const thisProduct = Product.find((prod) => prod.id === productId);
   const [showModal, setShowModal] = useState(false);
+  SwiperCore.use([Autoplay]);
+
   return (
-    <div className=" pt-40">
+    <div className=" pt-10">
       <div
         className="flex items-center justify-evenly flex-wrap mx-auto"
         style={{ width: "85%" }}
@@ -92,11 +93,7 @@ export default function Item() {
                     >
                       Diameter
                     </th>
-                    <td className="py-4 px-6">
-                      {thisProduct.Diameter
-                        ? thisProduct.Diameter + " sm"
-                        : "-"}
-                    </td>
+                    <td className="py-4 px-6">{thisProduct.Diameter} cm</td>
                   </tr>
                 ) : (
                   ""
@@ -143,19 +140,33 @@ export default function Item() {
               </tbody>
             </table>
           </div>
-          <div>
-            <h2 className="text-gray-600 font-bold inline-block mt-5 text-2xl">
-              Price
-            </h2>
-            <button
-              type="button"
-              className="cursor-default bg-gradient-to-r from-red-600 to-gray-300 text-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-4 py-1.5 ml-5 mb-2"
-            >
-              {thisProduct.price} LE
-            </button>
-          </div>
+          {thisProduct.offer ? (
+            <div className="flex w-full justify-center px-2 mt-5">
+              <h2 className="text-xl font-semibold pr-10">
+                Price :{" "}
+                <span className="text-red-500 line-through text-xl font-light">
+                  {thisProduct.price} EG
+                </span>
+              </h2>
+              <h3 className="text-xl">
+                {thisProduct.price - thisProduct.offer} EG
+              </h3>
+            </div>
+          ) : (
+            <div>
+              <h2 className="text-gray-600 font-bold inline-block mt-5 text-2xl">
+                Price
+              </h2>
+              <button
+                type="button"
+                className="cursor-default bg-gradient-to-r from-red-600 to-gray-300 text-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-4 py-1.5 ml-5 mb-2"
+              >
+                {thisProduct.price} LE
+              </button>
+            </div>
+          )}
         </div>
-        <button onClick={() => setShowModal(true)}>
+        <button onClick={() => setShowModal(true)} className="relative">
           <Carousel
             data={thisProduct.thumbnail}
             width="350px"
@@ -171,6 +182,13 @@ export default function Item() {
               position: "relative",
             }}
           />
+          {thisProduct.offer ? (
+            <div className="bg-red-500 rounded-full absolute w-16 top-1.5 right-2 flex justify-center items-center offer">
+              <p className="text-white my-4">Offer</p>
+            </div>
+          ) : (
+            ""
+          )}
         </button>
         <div>
           {showModal ? (
@@ -228,10 +246,17 @@ export default function Item() {
           >
             {Product.map((ele) => {
               return ele.category === thisProduct.category ? (
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                   <NavLink to={`/item/${ele.id}`}>
                     <img src={ele.img} alt="" className="w-96 h-60 hoverimg" />
                   </NavLink>
+                  {ele.offer ? (
+                    <div className="bg-red-500 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center">
+                      <p className="text-white my-2.5">Offer</p>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </SwiperSlide>
               ) : (
                 ""

@@ -39,6 +39,6 @@
 }
 .active,
 .dot:hover{
-  background-color: rgba(239, 68, 68, var(--tw-text-opacity)) !important;
+  background-color: #824444 !important;
   color: white;
 }
