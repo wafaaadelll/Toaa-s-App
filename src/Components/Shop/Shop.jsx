@@ -96,7 +96,7 @@ function HighToLow (){
         </Transition.Root>
 
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-baseline justify-between border-b border-gray-200 pt-24 pb-6">
+          <div className="flex items-baseline justify-between border-b border-gray-200 pt-10 pb-6">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900">Products</h1>
 
             <div className="flex items-center">
@@ -153,17 +153,13 @@ function HighToLow (){
                 </ul>
               </form>
               {/* Product grid */}
-              <div className="lg:col-span-3">
                 {/* Replace with your content */}
                 {/* <h2 id="products-heading" className='text-5xl text-gray-500 pb-5'>
                     Products
                 </h2> */}
-                <div className="h-96 rounded-lg border-4 border-dashed border-gray-200 lg:h-full">
                 <ShopFilter item={item}/>
                 </div>
                 {/* /End replace */}
-              </div>
-            </div>
           </section>
         </main>
       </div>

@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+.active,
+.dot:hover{
+  background-color: rgba(239, 68, 68, var(--tw-text-opacity)) !important;
+  color: white;
+}

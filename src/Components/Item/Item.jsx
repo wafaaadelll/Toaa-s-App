@@ -7,18 +7,20 @@ import './Item.css'
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { Navigation } from "swiper";
+import { Navigation , Pagination} from "swiper";
 
 export default function Item() {
   const { productId } = useParams();
   const thisProduct = Product.find((prod) => prod.id === productId);
   const [showModal, setShowModal] = useState(false);
   return (
-    <div
-      className="mx-auto pt-40 flex items-center justify-between"
-      style={{ width: "85%" }}
+    <div className=" pt-40" >
+      <div
+      className="flex items-center justify-between flex-wrap mx-auto"style={{ width: "85%" }}
+      
     >
       <div className="w-6/12 mx-auto">
+        <h2 className="font-bold text-2xl mb-5"> Title : <span className="font-light text-xl">{thisProduct.title}</span> </h2>
         <div className="overflow-x-auto relative shadow-md sm:rounded-lg ">
           <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -32,15 +34,6 @@ export default function Item() {
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
-                <th
-                  scope="row"
-                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Title
-                </th>
-                <td class="py-4 px-6">{thisProduct.title}</td>
-              </tr>
               <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
@@ -96,7 +89,7 @@ export default function Item() {
             textAlign: "center",
             maxWidth: "100%",
             margin: "auto",
-            position: "relative",
+            position: "relative"
           }}
         />
       </button>
@@ -124,6 +117,34 @@ export default function Item() {
           </>
         ) : ("")}
       </div>
+    </div>
+      <div className="mt-18 mb-10">
+        <h2 className="text-left font-bold text-4xl text-gray-600 mb-5 mx-auto" style={{"width":"85%"}}>SIMILAR Products</h2>
+        <div className="mt-7 swipe h-96 flex items-center	">
+              <Swiper
+        slidesPerView={5}
+          loop={true}
+          spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        autoplay    = {{
+          delay               : 1500,
+          disableOnInteraction: false,
+        }}
+            className="similar mx-auto"
+            style={{"width":"85%"}}
+        >
+          {Product.map((ele) => {
+            return (
+              ele.category === thisProduct.category ? 
+                  <SwiperSlide><img src={ele.img} alt="" className="w-96 h-60" /></SwiperSlide> : "")
+          })}
+          </Swiper>
+          </div>
+            </div>
     </div>
   );
 }

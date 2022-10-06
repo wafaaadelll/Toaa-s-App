@@ -3,3 +3,13 @@
     width: 100%;
     z-index: 2;
 }
+
+.navbar .swiper-button-next,
+.navbar .swiper-rtl .swiper-button-prev {
+    color: gray !important;
+}
+
+.navbar .swiper-button-prev,
+.navbar .swiper-rtl .swiper-button-next {
+        color: gray;
+}

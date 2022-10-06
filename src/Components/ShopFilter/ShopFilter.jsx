@@ -1,10 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Product from '../../Service/Product'
 import './Filter.css'
 
 export default function ShopFilter({ item }) {
   return (
-    <div class="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3 mt-5">
+      <div className="lg:col-span-3">
+                {/* Replace with your content */}
+                {/* <h2 id="products-heading" className='text-5xl text-gray-500 pb-5'>
+                    Products
+                </h2> */}
+          <div className="h-96 rounded-lg border-4 border-dashed border-gray-200 lg:h-full">
+                    <div class="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3 mt-5">
             {item.map((product)=>{
                 return(
                     <div class="w-full rounded hover:shadow-2xl text-left containe">
@@ -21,6 +28,9 @@ export default function ShopFilter({ item }) {
                     </div>
                 )
             })}
-        </div>
+      </div>
+                </div>
+                {/* /End replace */}
+              </div>
   )
 }

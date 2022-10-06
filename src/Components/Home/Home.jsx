@@ -15,6 +15,7 @@ import Products from "../Products/Products";
 import AOS from 'aos'
 import Swipe from "../Swiper/Swipe";
 import 'aos/dist/aos.css';
+import Categories from "../Categories/Categories";
 
 export default function Home() {
     AOS.init();
@@ -48,7 +49,7 @@ export default function Home() {
         }
     ]
   return (
-    <div className="mx-auto text-center pt-20">
+    <div className="mx-auto text-center">
         <Swiper navigation  = {true}
         modules     = {[Navigation]}
         loop        = {true}
@@ -67,8 +68,9 @@ export default function Home() {
                     )
                 })
             }
-      </Swiper>
-      <div data-aos="fade-up" class="container mx-auto space-y-2 lg:space-y-0 lg:gap-10 lg:grid lg:grid-cols-3 mt-5 " style={{"width":"85%"}}>
+          </Swiper>
+          <Categories naming={"Winter Clothes"}/>
+      <div data-aos="fade-up" class="container space-y-2 lg:space-y-0 lg:gap-10 lg:grid lg:grid-cols-3 mt-5 mx-auto " style={{"width":"85%"}}>
         {
             products.map((product)=>{
                 return(
@@ -85,10 +87,12 @@ export default function Home() {
                 )
             })
         }
-        </div>
-
-        <Offers/>
-        <Products/>
+              </div>
+        <Categories naming={"Hey Bags"}/>
+          <Offers />
+          <Categories naming={"Macrame wall hanging"}/>
+          <Products />
+        <Categories naming={"Boxes"}/>
         <Swipe/>
     </div>
   )

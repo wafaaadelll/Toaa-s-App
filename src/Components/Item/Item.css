@@ -1,3 +1,23 @@
 .Swiper .swiper-wrapper{
     align-items: center;
 }
+.similar #root .swiper-button-prev::after,
+.similar #root .swiper-button-next::after {
+    font-size: 2em;
+    color: white !important;
+    font-weight: bolder;
+}
+
+.similar .swiper-button-next,
+.similar .swiper-rtl .swiper-button-prev {
+    right: 0px !important;
+font-size: 2em;
+    color: white !important;
+    font-weight: bolder;}
+
+.similar .swiper-button-prev,
+.similar .swiper-rtl .swiper-button-next {
+    left: 0px !important;
+font-size: 2em;
+    color: white !important;
+    font-weight: bolder;}

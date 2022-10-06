@@ -1,7 +1,15 @@
 import { Transition } from '@headlessui/react';
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Nav.css'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import SwiperCore,{ Navigation , Autoplay , Pagination } from "swiper";
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const links = [
@@ -10,40 +18,27 @@ export default function Nav() {
         {title:"Contact" , link:"/Contact"},
     ]
   return (
-    <div className='Nav'>
-      <nav className='bg-red-600 text-gray-50 text-center'>
-        <p><strong>For Contact</strong>+20111223456</p>
-      </nav>
-      <nav className="bg-gray-200">
+    <div>
+      <div className='Nav'>
+        <nav className='bg-gray-200 py-1.5'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <img
-                  className="h-16 w-20"
-                  src={"Images/logo.PNG"}
-                  alt="Workflow"
-                />
-                {/* test */}
-              </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <Link to={'/Home'}
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+         <div className="hidden md:block">
+                <div className="justify-center flex items-baseline space-x-4">
+                  <NavLink to={'/Home'} exact activeClassName='is-active'
+                    className=" hover:bg-red-500 hover:text-white text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
-                  </Link>
+                  </NavLink>
                   {
                     links.map((link)=>{
                         return(
-                        <Link to={`${link.link}`} className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{link.title}
-                        </Link>
+                        <NavLink to={`${link.link}`} activeClassName='is-active' className="text-gray-500 hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{link.title}
+                        </NavLink>
                         )
                     })
                   }
                 </div>
               </div>
-            </div>
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -86,12 +81,11 @@ export default function Nav() {
                     />
                   </svg>
                 )}
-              </button>
-            </div>
-          </div>
+          </button>
+        
         </div>
-
-        <Transition
+        </div>
+          <Transition
           show={isOpen}
           enter="transition ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
@@ -141,6 +135,37 @@ export default function Nav() {
             </div>
           )}
         </Transition>
+      </nav>
+      <nav className='bg-white py-1'>
+<Swiper
+        navigation  = {true}
+        modules     = {[Navigation]}
+        loop        = {true}
+        speed       = {700}
+        autoplay    = {{
+            delay               : 1000,
+            disableOnInteraction: false,
+          }}
+        className="navbar mx-auto"
+      >
+        <SwiperSlide className="font-semibold text-gray-600"><span className='text-red-600'>NOTE : </span>WE CAN MAKE ANY DESIGN YOU WANT</SwiperSlide>
+        <SwiperSlide className="font-semibold text-gray-600"><span className='text-red-600'>NOTE : </span>YOU CAN CHOOSE WHAY COLOR TO BE</SwiperSlide>
+        <SwiperSlide className="font-semibold text-gray-600"><span className='text-red-600'>NOTE : </span>HAPPY TO HELP YOU</SwiperSlide>
+      </Swiper>        </nav>
+        <hr/>
+      </div>
+      <nav className="bg-white pt-24">
+          <div className="flex-shrink-0">
+            <img
+              className="h-24 w-44 mx-auto"
+              src={"Images/logo.PNG"}
+              alt="Workflow"
+            />
+            {/* test */}
+          </div>
+      </nav>
+        <nav className='bg-red-600 text-gray-50 text-center py-1'>
+        <p><strong>For Contact</strong>+20111223456</p>
       </nav>
     </div>
   )

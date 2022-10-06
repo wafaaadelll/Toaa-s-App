@@ -5,10 +5,12 @@ import Item from "../Components/Item/Item";
 import Nav from "../Components/Navbar/Nav";
 import Shop from "../Components/Shop/Shop";
 import About from "../Components/About/About";
+import Scrolling from "../scrolling";
 export default function Pages() {
   return (
     <div>
-      <Nav />
+      <Scrolling>
+        <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
@@ -16,6 +18,7 @@ export default function Pages() {
         <Route path="/Shop" element={<Shop />} />
         <Route path="/About" element={<About />} />
       </Routes>
+      </Scrolling>
     </div>
   );
 }
