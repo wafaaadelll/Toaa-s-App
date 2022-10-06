@@ -35,8 +35,8 @@
     font-weight: bolder;
 }  
 .mySwiper .swiper-button-next, .mySwiper .swiper-rtl .swiper-button-prev{
-    right: 120px !important;
-}
+    color: #824444;
+  }
 .mySwiper .swiper-button-prev, .mySwiper .swiper-rtl .swiper-button-next{
-    left: 120px !important;
-}
+    color: #824444;
+  }

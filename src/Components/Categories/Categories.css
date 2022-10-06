@@ -4,3 +4,8 @@
 .txtshadow{
     text-shadow: 2px 2px 2px #824444;
 }
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev,.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    color: #824444;
+}
