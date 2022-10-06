@@ -1,3 +1,11 @@
-.Font{
-    font-family: 'Bai Jamjuree', sans-serif;
+.IconColor{
+    color:#824444;
+}
+.IconColorBack{
+    background-color: #824444;
+    
+}
+
+.Icon{
+   color: #eeeece
 }

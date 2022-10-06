@@ -5,10 +5,20 @@ export default function Contact() {
     <div style={{ width: "85%" }} className="mx-auto">
       <div className="grid grid-cols-3 gap-20 mt-20 ">
         <div className="col-span-2 ">
-          <h3 className="Font">Get In Touch</h3>
-          <p>You can get intouch with us any time we area avalibale 24/7 </p>
+          <h3 className="font text-5xl headtext IconColor">Get In Touch</h3>
+          <p className="mt-10 text-left pl-3">
+            You can contact us any way that is convenient for you. We are
+            available 24/7 via Whatsapp or email. You can also use a quick contact
+            form below or visit our Facebook Page or Instagram .
+            <br/>
+            <br/>
+            
+             Email us with any
+            questions or inquiries or use our contact data. We would be happy to
+            answer your questions.{" "}
+          </p>
           <form>
-            <div class="grid md:grid-cols-2 md:gap-6 mt-6 text-left pl-2">
+            <div class="grid md:grid-cols-2 md:gap-6 mt-10 text-left pl-2 IconColor">
               <div class="relative z-0 mb-6 w-full group">
                 <input
                   type="text"
@@ -77,7 +87,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div class="relative z-0 mb-6 w-full group text-left pl-2">
+            <div class="relative z-0 mb-6 w-full mt-6 text-left pl-2">
               <input
                 type="text"
                 name="floating_message"
@@ -95,18 +105,20 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="IconColorBack text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Submit
             </button>
           </form>
         </div>
         <div className="">
-          <h3 className="pb-3 text-left">FOLLOW US </h3>
+          <h3 className="mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+            FOLLOW US{" "}
+          </h3>
           <hr />
-          <div class="flex mt-4 space-x-6 sm:mt-0 text-left pt-3">
+          <div class="flex mt-4 space-x-6 sm:mt-0 text-left pt-3 ">
             <a
-              href="#"
+              href="https://www.facebook.com/groups/921439081667115/?ref=share_group_link"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -124,7 +136,7 @@ export default function Contact() {
               <span class="sr-only">Facebook page</span>
             </a>
             <a
-              href="#"
+              href="https://instagram.com/heart.made678?igshid=NmNmNjAwNzg="
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -142,7 +154,7 @@ export default function Contact() {
               <span class="sr-only">Instagram page</span>
             </a>
             <a
-              href="#"
+              href="https://twitter.com/heartmade15?s=11&t=9CdFLrK1BOComhlQQYapnQ"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -155,6 +167,33 @@ export default function Contact() {
               </svg>
               <span class="sr-only">Twitter page</span>
             </a>
+          </div>
+          <div className="mt-16">
+            <h3 className="mt-6 mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+              PHONES{" "}
+            </h3>
+            <hr />
+            <div class="text-left pt-3">
+              +01228812605 +01066859655
+            </div>
+          </div>
+          <div className="mt-16 ">
+            <h3 className="mt-6 mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+              E-MAIL{" "}
+            </h3>
+            <hr />
+            <div class="space-x-6 sm:mt-0 text-left pt-3">
+              +01228812605 +01066859655
+            </div>
+          </div>
+          <div className="mt-16 ">
+            <h3 className="mt-6 mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+              Address
+            </h3>
+            <hr />
+            <div class="space-x-6 sm:mt-0 text-left pt-3">
+              Tanta , El-Gharbia
+            </div>
           </div>
         </div>
       </div>
