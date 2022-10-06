@@ -106,7 +106,7 @@ export default function Contact() {
           <hr />
           <div class="flex mt-4 space-x-6 sm:mt-0 text-left pt-3">
             <a
-              href="#"
+              href="https://www.facebook.com/groups/921439081667115/?ref=share_group_link"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -124,7 +124,7 @@ export default function Contact() {
               <span class="sr-only">Facebook page</span>
             </a>
             <a
-              href="#"
+              href="https://instagram.com/heart.made678?igshid=NmNmNjAwNzg="
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -142,7 +142,7 @@ export default function Contact() {
               <span class="sr-only">Instagram page</span>
             </a>
             <a
-              href="#"
+              href="https://twitter.com/heartmade15?s=11&t=9CdFLrK1BOComhlQQYapnQ"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
