@@ -384,7 +384,7 @@ export default [
     title: "Labore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
-    offer:"yes",
+    "New Arrival":"yes",
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/Hanger0111.jfif")}`,
     thumbnail: [{
@@ -439,6 +439,8 @@ export default [
     length: 28,
     width: 7,
     height: 18,
+        offer:30,
+
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0101.jfif")}`,
     thumbnail: [{
@@ -451,7 +453,7 @@ export default [
     title: "Macrame with Lether Cover SLY",
     category: "Bags",
     price: 300,
-    offer:"yes",
+    "New Arrival":"yes",
     length: 25,
     width: 7,
     height: 12,
@@ -525,7 +527,8 @@ export default [
     title: "Cabore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
-    offer:"yes",
+    
+    "New Arrival": "yes",
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger031.jfif")}`,
     thumbnail: [{
@@ -620,7 +623,7 @@ export default [
     id: "32",
     title: "Labore eumperspiciatis quia libero",
     category: "Winter Clothes",
-    price: 8022.22,
+    price: 322,
     img: `${require("../Components/Images/WinterClothes/Clothes011.jfif")}`,
     thumbnail: [{
       image:
@@ -846,6 +849,8 @@ export default [
     length: 18,
     width: 8,
     height: 10,
+        offer:10,
+
     AvailableColors:["Havan , Red , Grey , Black , White , Baby blue "],
     Note:"Ask for new colors",
     img: `${require("../Components/Images/Bags/Bag0143.jfif")}`,
@@ -941,6 +946,8 @@ export default [
     length: 22,
     width: 7,
     height: 18,
+        offer:10,
+
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0171.jfif")}`,
     thumbnail: [
@@ -1148,6 +1155,8 @@ export default [
     length: 16,
     width: 6,
     height: 18,
+        offer:20,
+
     img: `${require("../Components/Images/Bags/Bag0241.jfif")}`,
     thumbnail: [
       {
@@ -1234,6 +1243,8 @@ export default [
     length: 25,
     width: 12,
     height: 28,
+        offer:15,
+
     img: `${require("../Components/Images/Bags/Bag0271.jfif")}`,
     thumbnail: [
       {
@@ -1293,6 +1304,7 @@ export default [
     length: 16,
     width: 5,
     height: 12,
+    offer:10,
     img: `${require("../Components/Images/Bags/Bag0291.jfif")}`,
     thumbnail: [
       {

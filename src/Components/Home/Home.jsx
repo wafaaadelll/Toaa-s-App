@@ -12,6 +12,7 @@ import Swipe from "../Swiper/Swipe";
 import "aos/dist/aos.css";
 import Categories from "../Categories/Categories";
 import Product from "../../Service/Product";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   AOS.init();
@@ -58,7 +59,7 @@ export default function Home() {
         style={{ width: "85%" }}
       >
         {Product.map((prod, index) => {
-          return prod.offer ? (
+          return prod["New Arrival"] ? (
             <div className="w-full rounded hover:shadow-2xl" key={index}>
               <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 relative">
                 <a href="#">
@@ -68,7 +69,7 @@ export default function Home() {
                     className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
                   />
                 </a>
-                <div className="p-5 text-gray-50 bg-red-600">
+                <div className="py-3 text-gray-50 bg-red-600">
                   <p>{prod.title}</p>
                 </div>
               </div>
@@ -79,7 +80,16 @@ export default function Home() {
         })}
       </div>
       <Categories naming={"Hey Bags"} />
-      <Offers />
+      <div className="mx-auto text-center bg-gray-100 py-12 mt-7">
+        <NavLink to={"/Offer"}>
+          <img
+            className="text-center mx-auto h-96"
+            style={{ width: "85%" }}
+            src="https://img.freepik.com/free-vector/offer-deals-banner-red-background_1017-27332.jpg?w=2000"
+            alt=""
+          />
+        </NavLink>
+      </div>
       <Categories naming={"Macrame wall hanging"} />
       <Products />
       <Categories naming={"Boxes"} />
