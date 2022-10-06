@@ -1,7 +1,7 @@
-import { Transition } from '@headlessui/react';
-import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom';
-import './Nav.css'
+import { Transition } from "@headlessui/react";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Nav.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,36 +9,42 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import SwiperCore,{ Navigation , Autoplay , Pagination } from "swiper";
+import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
 export default function Nav() {
-    const [isOpen, setIsOpen] = useState(false);
-    const links = [
-        {title:"About" , link:"/About"},
-        {title:"Shop" , link:"/Shop"},
-        {title:"Contact" , link:"/Contact"},
-    ]
+  const [isOpen, setIsOpen] = useState(false);
+  const links = [
+    { title: "About", link: "/About" },
+    { title: "Shop", link: "/Shop" },
+    { title: "Contact", link: "/Contact" },
+  ];
   return (
     <div>
-      <div className='Nav'>
-        <nav className='bg-gray-200 py-1.5'>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         <div className="hidden md:block">
-                <div className="justify-center flex items-baseline space-x-4">
-                  <NavLink to={'/Home'} exact activeClassName='is-active'
-                    className=" hover:bg-red-500 hover:text-white text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Home
-                  </NavLink>
-                  {
-                    links.map((link)=>{
-                        return(
-                        <NavLink to={`${link.link}`} activeClassName='is-active' className="text-gray-500 hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{link.title}
-                        </NavLink>
-                        )
-                    })
-                  }
-                </div>
+      <div className="Nav">
+        <nav className="bg-gray-200 py-1.5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="hidden md:block">
+              <div className="justify-center flex items-baseline space-x-4">
+                <NavLink
+                  to={"/Home"}
+                  exactactiveclassname="is-active"
+                  className=" hover:bg-red-500 hover:text-white text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Home
+                </NavLink>
+                {links.map((link, index) => {
+                  return (
+                    <NavLink
+                      to={`${link.link}`}
+                      key={index}
+                      activeclassname="is-active"
+                      className="text-gray-500 hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      {link.title}
+                    </NavLink>
+                  );
+                })}
               </div>
+            </div>
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -81,92 +87,102 @@ export default function Nav() {
                     />
                   </svg>
                 )}
-          </button>
-        
-        </div>
-        </div>
-          <Transition
-          show={isOpen}
-          enter="transition ease-out duration-100 transform"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="transition ease-in duration-75 transform"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Dashboard
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Team
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Projects
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Calendar
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
-              </div>
+              </button>
             </div>
-          )}
-        </Transition>
-      </nav>
-      <nav className='bg-white py-1'>
-<Swiper
-        navigation  = {true}
-        modules     = {[Navigation]}
-        loop        = {true}
-        speed       = {700}
-        autoplay    = {{
-            delay               : 1000,
-            disableOnInteraction: false,
-          }}
-        className="navbar mx-auto"
-      >
-        <SwiperSlide className="font-semibold text-gray-600"><span className='text-red-600'>NOTE : </span>WE CAN MAKE ANY DESIGN YOU WANT</SwiperSlide>
-        <SwiperSlide className="font-semibold text-gray-600"><span className='text-red-600'>NOTE : </span>YOU CAN CHOOSE WHAY COLOR TO BE</SwiperSlide>
-        <SwiperSlide className="font-semibold text-gray-600"><span className='text-red-600'>NOTE : </span>HAPPY TO HELP YOU</SwiperSlide>
-      </Swiper>        </nav>
-        <hr/>
+          </div>
+          <Transition
+            show={isOpen}
+            enter="transition ease-out duration-100 transform"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="transition ease-in duration-75 transform"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+            {(ref) => (
+              <div className="md:hidden" id="mobile-menu">
+                <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                  <a
+                    href="#"
+                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Dashboard
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Team
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Projects
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Calendar
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Reports
+                  </a>
+                </div>
+              </div>
+            )}
+          </Transition>
+        </nav>
+        <nav className="bg-white py-1">
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            loop={true}
+            speed={700}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            className="navbar mx-auto"
+          >
+            <SwiperSlide className="font-semibold text-gray-600">
+              <span className="text-red-600">NOTE : </span>WE CAN MAKE ANY
+              DESIGN YOU WANT
+            </SwiperSlide>
+            <SwiperSlide className="font-semibold text-gray-600">
+              <span className="text-red-600">NOTE : </span>YOU CAN CHOOSE WHAY
+              COLOR TO BE
+            </SwiperSlide>
+            <SwiperSlide className="font-semibold text-gray-600">
+              <span className="text-red-600">NOTE : </span>HAPPY TO HELP YOU
+            </SwiperSlide>
+          </Swiper>{" "}
+        </nav>
+        <hr />
       </div>
       <nav className="bg-white pt-24">
-          <div className="flex-shrink-0">
-            <img
-              className="h-24 w-44 mx-auto"
-              src={"Images/logo.PNG"}
-              alt="Workflow"
-            />
-            {/* test */}
-          </div>
+        <div className="flex-shrink-0">
+          <img
+            className="h-24 w-44 mx-auto"
+            src={"Images/logo.PNG"}
+            alt="Workflow"
+          />
+          {/* test */}
+        </div>
       </nav>
-        <nav className='bg-red-600 text-gray-50 text-center py-1'>
-        <p><strong>For Contact</strong>+20111223456</p>
+      <nav className="bg-red-600 text-gray-50 text-center py-1">
+        <p>
+          <strong>For Contact</strong>+20111223456
+        </p>
       </nav>
     </div>
-  )
+  );
 }

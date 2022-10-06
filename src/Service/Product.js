@@ -384,6 +384,7 @@ export default [
     title: "Labore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
+    offer:"yes",
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/Hanger0111.jfif")}`,
     thumbnail: [{
@@ -450,6 +451,7 @@ export default [
     title: "Macrame with Lether Cover SLY",
     category: "Bags",
     price: 300,
+    offer:"yes",
     length: 25,
     width: 7,
     height: 12,
@@ -523,6 +525,7 @@ export default [
     title: "Cabore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
+    offer:"yes",
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger031.jfif")}`,
     thumbnail: [{
