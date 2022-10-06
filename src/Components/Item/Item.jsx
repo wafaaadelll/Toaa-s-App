@@ -60,8 +60,9 @@ export default function Item() {
                   Length
                 </th>
                 <td class="py-4 px-6">{thisProduct.length? thisProduct.length + " sm" : "-"}</td>
-              </tr>
-              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                </tr>
+                {
+                  thisProduct.Diameter ? <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
                   class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -69,7 +70,8 @@ export default function Item() {
                   Diameter
                 </th>
                 <td class="py-4 px-6">{thisProduct.Diameter? thisProduct.Diameter + " sm" : "-"}</td>
-              </tr>
+              </tr> : ""
+                }
               <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
