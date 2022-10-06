@@ -29,7 +29,7 @@ export default function Item() {
                   Product name
                 </th>
                 <th scope="col" class="py-3 px-6">
-                  Color
+                  Description
                 </th>
               </tr>
             </thead>
@@ -41,7 +41,7 @@ export default function Item() {
                 >
                   Width
                 </th>
-                <td class="py-4 px-6">{thisProduct.title}</td>
+                <td class="py-4 px-6">{thisProduct.width? thisProduct.width + " sm" : "-"}</td>
               </tr>
               <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
@@ -50,7 +50,7 @@ export default function Item() {
                 >
                   Height
                 </th>
-                <td class="py-4 px-6">{thisProduct.title}</td>
+                <td class="py-4 px-6">{thisProduct.height? thisProduct.height + " sm" : "-"}</td>
               </tr>
               <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
@@ -59,7 +59,43 @@ export default function Item() {
                 >
                   Length
                 </th>
-                <td class="py-4 px-6">{thisProduct.title}</td>
+                <td class="py-4 px-6">{thisProduct.length? thisProduct.length + " sm" : "-"}</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Diameter
+                </th>
+                <td class="py-4 px-6">{thisProduct.Diameter? thisProduct.Diameter + " sm" : "-"}</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  WithCover
+                </th>
+                <td class="py-4 px-6">{thisProduct.WithCover? thisProduct.WithCover : "No"}</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Note
+                </th>
+                <td class="py-4 px-6">{thisProduct.Note? thisProduct.Note :"-"}</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Available Colors
+                </th>
+                <td class="py-4 px-6">{thisProduct.AvailableColors? thisProduct.AvailableColors : "-"}</td>
               </tr>
             </tbody>
           </table>
@@ -72,7 +108,7 @@ export default function Item() {
             type="button"
             class="cursor-default bg-gradient-to-r from-red-600 to-gray-300 text-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-4 py-1.5 ml-5 mb-2"
           >
-            {thisProduct.price} $
+            {thisProduct.price} LE
           </button>
         </div>
       </div>
