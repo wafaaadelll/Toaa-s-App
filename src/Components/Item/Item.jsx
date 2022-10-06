@@ -144,12 +144,12 @@ export default function Item() {
             <div className="flex w-full justify-center px-2 mt-5">
               <h2 className="text-xl font-semibold pr-10">
                 Price :{" "}
-                <span className="text-red-500 line-through text-xl font-light">
-                  {thisProduct.price} EG
+                <span className="text-red-600 line-through text-xl font-light">
+                  {thisProduct.price} LE
                 </span>
               </h2>
               <h3 className="text-xl">
-                {thisProduct.price - thisProduct.offer} EG
+                {thisProduct.price - thisProduct.offer} LE
               </h3>
             </div>
           ) : (
@@ -159,7 +159,7 @@ export default function Item() {
               </h2>
               <button
                 type="button"
-                className="cursor-default bg-gradient-to-r from-red-600 to-gray-300 text-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-4 py-1.5 ml-5 mb-2"
+                className="cursor-default bg-gradient-to-r from-red-800 to-gray-300 text-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-4 py-1.5 ml-5 mb-2"
               >
                 {thisProduct.price} LE
               </button>
@@ -183,7 +183,7 @@ export default function Item() {
             }}
           />
           {thisProduct.offer ? (
-            <div className="bg-red-500 rounded-full absolute w-16 top-1.5 right-2 flex justify-center items-center offer">
+            <div className="bg-red-600 rounded-full absolute w-16 top-1.5 right-2 flex justify-center items-center offer">
               <p className="text-white my-4">Offer</p>
             </div>
           ) : (
@@ -251,7 +251,7 @@ export default function Item() {
                     <img src={ele.img} alt="" className="w-96 h-60 hoverimg" />
                   </NavLink>
                   {ele.offer ? (
-                    <div className="bg-red-500 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center">
+                    <div className="bg-red-600 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center">
                       <p className="text-white my-2.5">Offer</p>
                     </div>
                   ) : (
