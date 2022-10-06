@@ -439,8 +439,7 @@ export default [
     length: 28,
     width: 7,
     height: 18,
-        offer:30,
-
+    offer:30,
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0101.jfif")}`,
     thumbnail: [{

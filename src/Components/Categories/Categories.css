@@ -1,3 +1,6 @@
 .hoverimg:hover{
     opacity: 50%;
 }
+.txtshadow{
+    text-shadow: 2px 2px 2px #824444;
+}

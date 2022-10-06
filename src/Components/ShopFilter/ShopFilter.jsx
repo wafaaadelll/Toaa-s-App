@@ -35,13 +35,13 @@ export default function ShopFilter({ item }) {
                   </p>
                   <button
                     type="button"
-                    className="bg-gradient-to-r from-red-600 to-gray-300 text-gray-50 hover:bg-gradient-to-l hover:from-red-600 hover:to-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-4 py-1.5 text-center mr-2 mb-2"
+                    className="bg-gradient-to-r from-red-800 to-gray-300 text-gray-50 hover:bg-gradient-to-l hover:from-red-800 hover:to-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center mr-2 mb-2"
                   >
                     {product.price} $
                   </button>
                 </div>
                 {product.offer ? (
-                  <div className="bg-red-500 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center offer">
+                  <div className="bg-red-600 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center offer">
                     <p className="text-white my-2.5">Offer</p>
                   </div>
                 ) : (

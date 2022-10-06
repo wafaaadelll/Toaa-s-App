@@ -69,7 +69,7 @@ export default function Home() {
                     className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
                   />
                 </a>
-                <div className="py-3 text-gray-50 bg-red-600">
+                <div className="py-3 text-gray-50 bg-topcolor">
                   <p>{prod.title}</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
         })}
       </div>
       <Categories naming={"Hey Bags"} />
-      <div className="mx-auto text-center bg-gray-100 py-12 mt-7">
+      <div className="mx-auto text-center bg-color py-12 mt-7">
         <NavLink to={"/Offer"}>
           <img
             className="text-center mx-auto h-96"
