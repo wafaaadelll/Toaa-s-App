@@ -9,9 +9,9 @@ export default function Offers() {
         OFFERS
       </h1>
       <section className="w-4/5 mx-auto mt-7 lg:gap-2 lg:grid lg:grid-cols-4">
-        {Product.map((item) => {
+        {Product.map((item, index) => {
           return item.offer ? (
-            <div className="border-2 shadow-2xl relative">
+            <div className="border-2 shadow-2xl relative" key={index}>
               <div className="img-wrapper">
                 <img
                   src={item.img}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+
 export default function Contact() {
   return (
     <div style={{ width: "85%" }} className="mx-auto">
@@ -8,86 +9,86 @@ export default function Contact() {
           <h3 className="font text-5xl headtext IconColor">Get In Touch</h3>
           <p className="mt-10 text-left pl-3">
             You can contact us any way that is convenient for you. We are
-            available 24/7 via Whatsapp or email. You can also use a quick contact
-            form below or visit our Facebook Page or Instagram .
-            <br/>
-            <br/>
-            
-             Email us with any
-            questions or inquiries or use our contact data. We would be happy to
-            answer your questions.{" "}
+            available 24/7 via Whatsapp or email. You can also use a quick
+            contact form below or visit our Facebook Page or Instagram .
+            <br />
+            <br />
+            Email us with any questions or inquiries or use our contact data. We
+            would be happy to answer your questions.{" "}
           </p>
           <form>
-            <div class="grid md:grid-cols-2 md:gap-6 mt-10 text-left pl-2 IconColor">
-              <div class="relative z-0 mb-6 w-full group">
+            <div className="grid md:grid-cols-2 md:gap-6 mt-10 text-left pl-2 IconColor">
+              <div className="relative z-0 mb-6 w-full group">
                 <input
                   type="text"
                   name="floating_first_name"
                   id="floating_first_name"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required=""
                 />
                 <label
                   htmlFor="floating_first_name"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   First name
                 </label>
               </div>
-              <div class="relative z-0 mb-6 w-full group">
+              <div className="relative z-0 mb-6 w-full group">
                 <input
                   type="text"
                   name="floating_last_name"
                   id="floating_last_name"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required=""
                 />
                 <label
                   htmlFor="floating_last_name"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Last name
                 </label>
               </div>
             </div>
-            <div class="grid md:grid-cols-2 md:gap-6 mt-6 text-left pl-2">
-              <div class="relative z-0 mb-6 w-full group">
+            <div className="grid md:grid-cols-2 md:gap-6 mt-6 text-left pl-2">
+              <div className="relative z-0 mb-6 w-full group">
                 <input
                   type="email"
                   name="floating_Email"
                   id="floating_Email"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required=""
                 />
                 <label
                   htmlFor="floating_Email"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Email Address
                 </label>
               </div>
-              <div class="relative z-0 mb-6 w-full group">
+              <div className="relative z-0 mb-6 w-full group">
                 <input
-                  type="number"
+                  type="text"
                   name="floating_Phone"
                   id="floating_Phone"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required=""
+                  minLength={11}
+                  maxLength={11}
                 />
                 <label
                   htmlFor="floating_Phone"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Phone Number
                 </label>
               </div>
             </div>
 
-            <div class="relative z-0 mb-6 w-full mt-6 text-left pl-2">
+            <div className="relative z-0 mb-6 w-full mt-6 text-left pl-2">
               <input
                 type="text"
                 name="floating_message"
@@ -105,24 +106,24 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              class="IconColorBack text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="IconColorBack text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Submit
             </button>
           </form>
         </div>
         <div className="">
-          <h3 className="mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+          <h3 className="mb-4 text-left text-xl mathfont font-bold text-gray-900 dark:text-white IconColor">
             FOLLOW US{" "}
           </h3>
           <hr />
-          <div class="flex mt-4 space-x-6 sm:mt-0 text-left pt-3 ">
+          <div className="flex mt-4 space-x-6 sm:mt-0 text-left pt-3 ">
             <a
               href="https://www.facebook.com/groups/921439081667115/?ref=share_group_link"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-topcolor dark:hover:text-white"
             >
               <svg
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -133,14 +134,14 @@ export default function Contact() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span class="sr-only">Facebook page</span>
+              <span className="sr-only">Facebook page</span>
             </a>
             <a
               href="https://instagram.com/heart.made678?igshid=NmNmNjAwNzg="
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-topcolor dark:hover:text-white"
             >
               <svg
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -151,49 +152,49 @@ export default function Contact() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span class="sr-only">Instagram page</span>
+              <span className="sr-only">Instagram page</span>
             </a>
             <a
               href="https://twitter.com/heartmade15?s=11&t=9CdFLrK1BOComhlQQYapnQ"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-topcolor dark:hover:text-white"
             >
               <svg
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
               </svg>
-              <span class="sr-only">Twitter page</span>
+              <span className="sr-only">Twitter page</span>
             </a>
           </div>
           <div className="mt-16">
-            <h3 className="mt-6 mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+            <h3 className="mt-6 mb-4 text-left text-xl mathfont font-bold text-gray-900 dark:text-white IconColor">
               PHONES{" "}
             </h3>
             <hr />
-            <div class="text-left pt-3">
-              +01228812605 +01066859655
+            <div className="text-left pt-3">
+              <p>+01228812605</p>
+              <p>+01066859655</p>
             </div>
           </div>
           <div className="mt-16 ">
-            <h3 className="mt-6 mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+            <h3 className="mt-6 mb-4 text-left text-xl mathfont font-bold text-gray-900 dark:text-white IconColor">
               E-MAIL{" "}
             </h3>
             <hr />
-            <div class="space-x-6 sm:mt-0 text-left pt-3">
-              +01228812605 +01066859655
+            <div className="sm:mt-0 text-left pt-3">
+              <p>+01228812605</p>
+              <p>+01066859655</p>
             </div>
           </div>
           <div className="mt-16 ">
-            <h3 className="mt-6 mb-4 text-left text-xl font font-bold text-gray-900 dark:text-white IconColor">
+            <h3 className="mt-6 mb-4 text-left text-xl mathfont font-bold text-gray-900 dark:text-white IconColor">
               Address
             </h3>
             <hr />
-            <div class="space-x-6 sm:mt-0 text-left pt-3">
-              Tanta , El-Gharbia
-            </div>
+            <div className="sm:mt-0 text-left pt-3">Tanta , El-Gharbia</div>
           </div>
         </div>
       </div>

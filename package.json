@@ -13,11 +13,12 @@
     "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-carousel-minimal": "^1.4.1",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
-    "react-whatsapp": "^0.3.0",
+    "react-visibility-sensor": "^5.1.1",
     "swiper": "^8.4.2",
     "web-vitals": "^2.1.4"
   },

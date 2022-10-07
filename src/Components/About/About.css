@@ -1,3 +1,13 @@
 .IconColor{
     color:#824444;
 }
+.bgimg{
+    background-image: url("https://livedemo00.template-help.com/wt_prod-12860/images/home-01-1920x1272.jpg");
+    background-position-x: -542px;
+    background-position-y: -81px;
+}
+.CircularProgressbar{
+    width: 45% !important;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -27,7 +27,7 @@ export default function Nav() {
                 <NavLink
                   to={"/Home"}
                   exactactiveclassname="is-active"
-                  className=" hover:bg-topcolor hover:text-white text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:bg-topcolor hover:text-white text-topcolor px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
                 </NavLink>
@@ -37,7 +37,7 @@ export default function Nav() {
                       to={`${link.link}`}
                       key={index}
                       activeclassname="is-active"
-                      className="text-gray-500 hover:bg-topcolor hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className="text-topcolor hover:bg-topcolor hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       {link.title}
                     </NavLink>
@@ -183,6 +183,12 @@ export default function Nav() {
           <strong>For Contact</strong>+20111223456
         </p>
       </nav>
+      <section className="whatsapp">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/201113747397">
+          {" "}
+          <img alt="Chat on WhatsApp" src="Images/whatsapp.png" />
+        </a>
+      </section>
     </div>
   );
 }

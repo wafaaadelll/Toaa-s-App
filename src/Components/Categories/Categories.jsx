@@ -43,7 +43,7 @@ export default function Categories({ naming }) {
         >
           {Product.map((ele, index) => {
             return ele.category === naming ? (
-              <div key={index} className="relative">
+              <div key={ele.id} className="relative">
                 <SwiperSlide>
                   <NavLink to={`/item/${ele.id}`}>
                     <img src={ele.img} alt="" className="w-96 h-60 hoverimg" />

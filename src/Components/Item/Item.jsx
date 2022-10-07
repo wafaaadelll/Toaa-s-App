@@ -244,9 +244,9 @@ export default function Item() {
             className="similar mx-auto"
             style={{ width: "85%" }}
           >
-            {Product.map((ele) => {
+            {Product.map((ele, index) => {
               return ele.category === thisProduct.category ? (
-                <SwiperSlide className="relative">
+                <SwiperSlide className="relative" key={index}>
                   <NavLink to={`/item/${ele.id}`}>
                     <img src={ele.img} alt="" className="w-96 h-60 hoverimg" />
                   </NavLink>
