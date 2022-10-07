@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Product from "../../Service/Product";
 import "./Offers.css";
 
@@ -13,11 +14,13 @@ export default function Offers() {
           return item.offer ? (
             <div className="border-2 shadow-2xl relative" key={index}>
               <div className="img-wrapper">
-                <img
-                  src={item.img}
-                  alt="offer"
-                  className="offerimg hover-zoom"
-                />
+                <NavLink to={`/Item/${item.id}`}>
+                  <img
+                    src={item.img}
+                    alt="offer"
+                    className="offerimg hover-zoom"
+                  />
+                </NavLink>
               </div>
               <div className="bg-red-600 rounded-full absolute w-12 top-1.5 right-1.5 flex justify-center items-center offer">
                 <p className="text-white my-2.5">Offer</p>
