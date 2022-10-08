@@ -8,6 +8,7 @@ import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
 import Scrolling from "../scrolling";
 import Offers from "../Components/Offers/Offers";
+import Footer from "../Components/Footer/Footer";
 export default function Pages() {
   return (
     <div>
@@ -22,6 +23,7 @@ export default function Pages() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Offer" element={<Offers />} />
         </Routes>
+        <Footer />
       </Scrolling>
     </div>
   );

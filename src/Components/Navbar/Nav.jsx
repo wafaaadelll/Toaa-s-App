@@ -172,7 +172,7 @@ export default function Nav() {
         <div className="flex-shrink-0">
           <img
             className="h-24 w-44 mx-auto"
-            src={"../Images/logo.png"}
+            src={process.env.PUBLIC_URL + "Images/logo.png"}
             alt="LOGO"
           />
           {/* test */}
@@ -180,13 +180,16 @@ export default function Nav() {
       </nav>
       <nav className="text-gray-50 text-center py-1 bottonav">
         <p>
-          <strong>For Contact</strong>+20111223456
+          <strong>For Contact</strong>+01228812605
         </p>
       </nav>
       <section className="whatsapp">
         <a aria-label="Chat on WhatsApp" href="https://wa.me/201113747397">
           {" "}
-          <img alt="Chat on WhatsApp" src="Images/whatsapp.png" />
+          <img
+            alt="Chat on WhatsApp"
+            src={process.env.PUBLIC_URL + "Images/whatsapp.png"}
+          />
         </a>
       </section>
     </div>

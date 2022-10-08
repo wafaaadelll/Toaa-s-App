@@ -9,7 +9,7 @@ export default function Offers() {
       <h1 className="underline italic text-4xl mt-5 font-semibold text-topcolor text-left">
         OFFERS
       </h1>
-      <section className="w-4/5 mx-auto mt-7 lg:gap-2 lg:grid lg:grid-cols-4">
+      <section className="w-4/5 mx-auto mt-7 gap-2 grid md:grid-cols-2 lg:grid-cols-4">
         {Product.map((item, index) => {
           return item.offer ? (
             <div className="border-2 shadow-2xl relative" key={index}>

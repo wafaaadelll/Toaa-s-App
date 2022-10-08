@@ -1,0 +1,6 @@
+.footer div .active,
+.footer div .dot:hover {
+    background-color: #824444 !important;
+    color: white;
+    padding: 2px 5px;
+}

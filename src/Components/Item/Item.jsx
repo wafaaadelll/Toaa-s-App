@@ -17,10 +17,10 @@ export default function Item() {
   return (
     <div className=" pt-10">
       <div
-        className="flex items-center justify-evenly flex-wrap mx-auto"
+        className="flex items-center justify-center lg:justify-evenly flex-wrap mx-auto"
         style={{ width: "85%" }}
       >
-        <div className="w-8/12 mx-auto">
+        <div className="w-full md:w-6/12 mx-auto">
           <h2 className="font-bold text-2xl mb-5">
             {" "}
             Title :{" "}
@@ -141,7 +141,7 @@ export default function Item() {
             </table>
           </div>
           {thisProduct.offer ? (
-            <div className="flex w-full justify-center px-2 mt-5">
+            <div className="flex w-full justify-center px-2 my-5">
               <h2 className="text-xl font-semibold pr-10">
                 Price :{" "}
                 <span className="text-red-600 line-through text-xl font-light">
@@ -193,7 +193,7 @@ export default function Item() {
         <div>
           {showModal ? (
             <>
-              <div className=" z-50 fixed flex justify-between top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-lg bg-white py-12 px-4 sm:px-6 lg:px-3 w-3/12">
+              <div className=" z-50 fixed flex justify-between top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-lg bg-white py-12 px-4 sm:px-6 lg:px-3 w-11/12 md:w-2/4 lg:w-3/12">
                 <div className="border-0 rounded-lg items-start justify-center relative flex w-full bg-white outline-none focus:outline-none">
                   <Swiper
                     navigation={true}
@@ -229,9 +229,25 @@ export default function Item() {
         </h2>
         <div className="mt-7 swipe h-96 flex items-center	">
           <Swiper
-            slidesPerView={5}
+            breakpoints={{
+              480: {
+                slidesPerView: 2,
+              },
+              640: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+              1024: {
+                slidesPerView: 5,
+              },
+            }}
+            observer={true}
+            observeParents={true}
+            spaceBetween={5}
+            slidesPerView={1}
             loop={true}
-            spaceBetween={10}
             pagination={{
               clickable: true,
             }}

@@ -6,7 +6,7 @@ export default function Cards({ item }) {
   return (
     <section>
       <div
-        className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-4 border-4 "
+        className="container mx-auto space-y-2 grid grid-cols-1 md:grid-cols-3 space-y-0 gap-2 lg:grid-cols-4 border-4 mt-5"
         style={{ height: "600px", overflowY: "scroll", overflowX: "hidden" }}
       >
         {item.map((product, index) => {

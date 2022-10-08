@@ -28,7 +28,24 @@ export default function Categories({ naming }) {
       </h2>
       <div>
         <Swiper
-          slidesPerView={5}
+          breakpoints={{
+            480: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            900: {
+              slidesPerView: 5,
+            },
+          }}
+          observer={true}
+          observeParents={true}
+          spaceBetween={5}
+          slidesPerView={1}
           loop={true}
           pagination={{
             clickable: true,

@@ -4,8 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Home.css";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
-import { Card, CardHeader, CardBody, Button } from "@material-tailwind/react";
-import Offers from "../Offers/Offers";
 import Products from "../Products/Products";
 import AOS from "aos";
 import Swipe from "../Swiper/Swipe";
@@ -52,10 +50,10 @@ export default function Home() {
           );
         })}
       </Swiper>
-      <Categories naming={"Winter Clothes"} />
+      {/* <Categories naming={"Winter Clothes"} /> */}
       <div
         data-aos="fade-up"
-        className="container space-y-2 lg:space-y-0 lg:gap-10 lg:grid lg:grid-cols-3 mt-5 mx-auto "
+        className="container space-y-2 grid-cols-1 md:grid-cols-2 lg:space-y-0 gap-10 grid lg:grid-cols-3 mt-5 mx-auto "
         style={{ width: "85%" }}
       >
         {Product.map((prod, index) => {
@@ -79,7 +77,7 @@ export default function Home() {
           );
         })}
       </div>
-      <Categories naming={"Hey Bags"} />
+      {/* <Categories naming={"Hey Bags"} /> */}
       <div className="mx-auto text-center bg-color py-12 mt-7">
         <NavLink to={"/Offer"}>
           <img
@@ -90,9 +88,9 @@ export default function Home() {
           />
         </NavLink>
       </div>
-      <Categories naming={"Macrame wall hanging"} />
+      {/* <Categories naming={"Macrame wall hanging"} /> */}
       <Products />
-      <Categories naming={"Boxes"} />
+      {/* <Categories naming={"Boxes"} /> */}
       <Swipe />
     </div>
   );
