@@ -32,7 +32,7 @@ export default function About() {
       text: "We use pattern from all over the world to ensure high taste from every country",
     },
     {
-      percent: "90",
+      percent: " 90 ",
       title: "Deliver in time",
       text: "We make sure to keep our word when receiving and shipping the item",
     },
