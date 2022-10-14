@@ -10,7 +10,19 @@ export default [
       {
         image:
           `${require("../Components/Images/HeyBags/Hey011.jfif")}`,
-      }
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag014.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag012.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag013.jfif")}`,
+      },
     ]
   },
   {
@@ -203,7 +215,7 @@ export default [
     id: "10",
     title: "Tiger S",
     category: "Bags",
-    price: 220 - 250,
+    price: 220,
     length: 20,
     width: 6,
     height: 16,
@@ -622,7 +634,7 @@ export default [
     id: "32",
     title: "Labore eumperspiciatis quia libero",
     category: "Winter Clothes",
-    price: 322,
+    price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes011.jfif")}`,
     thumbnail: [{
       image:
@@ -649,7 +661,7 @@ export default [
     id: "33",
     title: "Labore eumperspiciatis quia libero",
     category: "Winter Clothes",
-    price: 4022.22,
+    price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes021.jfif")}`,
     thumbnail: [{
       image:
@@ -676,7 +688,7 @@ export default [
     id: "34",
     title: "Labore eumperspiciatis quia libero",
     category: "Winter Clothes",
-    price: 4022.22,
+    price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes031.jfif")}`,
     thumbnail: [{
       image:
@@ -699,7 +711,7 @@ export default [
     id: "35",
     title: "Labore eumperspiciatis quia libero",
     category: "Winter Clothes",
-    price: 4022.22,
+    price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes041.jfif")}`,
     thumbnail: [{
       image:
@@ -726,11 +738,11 @@ export default [
     id: "36",
     title: "Dantel Box (1 Box )",
     category: "Boxes",
-    price: "65 (change by changing color )",
+    price: "65",
     Diameter: 15,
     WithCover: "Yes",
     AvailableColors:["Can be ordered With any Color You Want"],
-    Note: "If It with tipper Add 15 , Only With Diameter 15 , 20 It will have a tipper ,Price will be chanaged by changing the Yarn Type ",
+    Note: "If It with tipper Add 15 , Only With Diameter 15 , 20 It will have a tipper ,Price will be chanaged by changing the Yarn Type or the color ",
     img: `${require("../Components/Images/Box/Box031.jfif")}`,
     thumbnail: [
       {
@@ -1180,31 +1192,30 @@ export default [
       },
     ]
   },
-  // {
-  //   id: "52",
-  //   title: "Brown Chess",
-  //   category: "Bags",
-  //   price: 4022.22,
-  //   img: `${require("../Components/Images/Bags/Bag0251.jfif")}`,
-  //   thumbnail: [
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0251.jfif")}`,
-  //   },
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0252.jfif")}`,
-  //   },
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0253.jfif")}`,
-  //   },
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0254.jfif")}`,
-  //   },
-  // ]
-  // },
+
+  {
+    id: "52",
+    title: " Boxes Package ",
+    category: "Boxes",
+    price: "65, change by changing size ",
+    Length: 15,
+    WithCover: "No",
+    Note: "If It with tipper Add Extra Price (+15) ",
+    AvailableColors:["Can be ordered With any Color You Want"],
+    img: `${require("../Components/Images/Box/Box021.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Box/Box021.jfif")}`,
+      }, {
+        image:
+          `${require("../Components/Images/Box/Box022.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Box/Box023.jfif")}`,
+      }]
+  },
   {
     id: "53",
     title: "Brown Chess",
@@ -1252,7 +1263,7 @@ export default [
       },
       {
         image:
-          `${require("../Components/Images/Bags/BAg0272.jfif")}`,
+          `${require("../Components/Images/Bags/Bag0272.jfif")}`,
       },
       {
         image:
@@ -1318,6 +1329,644 @@ export default [
         image:
           `${require("../Components/Images/Bags/Bag0293.jfif")}`,
       },
+    ]
+  },
+  {
+    id: "57",
+    title: "Hey Rop Bag",
+    category: "Hey Bags",
+    price: 300,
+    price: 250,
+    Diameter:30,
+    width:7,
+    img: `${require("../Components/Images/HeyBags/Bag0341.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag0341.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey0345.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey0343.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey0344.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey0342.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "58",
+    title: "Truffel Bag",
+    category: "Hey Bags",
+    price: 220,
+    length:15,
+    height:18,
+    width:22,
+    img: `${require("../Components/Images/HeyBags/Bag0334.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag0334.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag0331.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag0332.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag0333.jfif")}`,
+      },
+
+    ]
+  },
+  ,
+  {
+    id: "59",
+    title: "Scarf & gloves outfit",
+    category: "Winter Clothes",
+    price:"variable",
+    img: `${require("../Components/Images/WinterClothes/Clothes0141.jfif")}`,
+    thumbnail: [{
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0141.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0142.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0143.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0144.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0145.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0146.jfif")}`,
+    }
+    ]
+  },
+  ,
+  {
+    id: "60",
+    title: "Winter Scarf",
+    category: "Winter Clothes",
+    price: "variable",
+    img: `${require("../Components/Images/WinterClothes/Clothes0151.jfif")}`,
+    thumbnail: [{
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0151.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0152.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0153.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0154.jfif")}`,
+    }
+      ,
+    {
+      image:
+        `${require("../Components/Images/WinterClothes/Clothes0155.jfif")}`,
+    }
+      ,
+    
+    ]
+  },
+  {
+    id: "61",
+    title: "Green Mandela",
+    category: "Bags",
+    price: 350,
+    Diameter:35,
+    width:7,
+    img: `${require("../Components/Images/Bags/Bag0331.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0331.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0332.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0333.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0334.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "62",
+    title: "Back Bag",
+    category: "Bags",
+    price: 250,
+    length:22,
+    width:12,
+    height:28,
+    img: `${require("../Components/Images/Bags/Bag0461.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0461.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0462.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0463.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0464.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0465.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0466.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0467.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "63",
+    title: "Royal White",
+    category: "Bags",
+    price: 280,
+    length:22,
+    width:9,
+    height:28,
+    img: `${require("../Components/Images/Bags/Bag0421.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0421.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0422.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0423.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0424.jfif")}`,
+      },
+
+    ]
+  },
+  {
+    id: "64",
+    title: "Janja Kleem Bag",
+    category: "Bags",
+    price: 230,
+    length:22,
+    width:8,
+    height:12,
+    img: `${require("../Components/Images/Bags/Bag0401.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0401.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0402.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0403.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0404.jfif")}`,
+      },
+      
+    ]
+  },
+  {
+    id: "65",
+    title: "Janja Kleem Bag",
+    category: "Bags",
+    price: 250,
+    Diameter:26,
+    width:8,
+    img: `${require("../Components/Images/Bags/Bag0361.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0361.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0362.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0363.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0364.jfif")}`,
+      },
+      
+    ]
+  },
+  {
+    id: "66",
+    title: "Oyster Rop Bag ",
+    category: "Bags",
+    price: 250,
+    Diameter:30,
+    width:9,
+    img: `${require("../Components/Images/Bags/Bag0371.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0371.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0372.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0373.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0374.jfif")}`,
+      },
+      
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0375.jfif")}`,
+      },
+      
+    ]
+  },
+  {
+    id: "67",
+    title: "Royal Red",
+    category: "Bags",
+    price: 280,
+    length:22,
+    width:9,
+    height:28,
+    img: `${require("../Components/Images/Bags/Bag0371.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0371.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0372.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0373.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0374.jfif")}`,
+      },
+      
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0375.jfif")}`,
+      },
+      
+    ]
+  },
+  {
+    id: "68",
+    title: "Classic Canva lyla ",
+    category: "Bags",
+    price: 230,
+    length: 22,
+    width: 5,
+    height: 12,
+    img: `${require("../Components/Images/Bags/Bag0391.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0391.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0392.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0393.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0394.jfif")}`,
+      },
+
+      
+    ]
+  },
+  {
+    id: "69",
+    title: "Black Organza",
+    category: "Bags",
+    price: 220,
+    length: 18,
+    width: 8,
+    height: 10,
+    AvailableColors:["Havan , Red , Grey , Black , White , Baby blue "],
+    Note:"Ask for new colors",
+    img: `${require("../Components/Images/Bags/Bag0451.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0451.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0452.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0453.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "71",
+    title: "Tiny Orang ",
+    category: "Bags",
+    price: 190,
+    length: 16,
+    width: 5,
+    height: 12,
+    img: `${require("../Components/Images/Bags/Bag0441.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0441.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0442.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0443.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "72",
+    title: "  Mustard Grey Canva",
+    category: "Bags",
+    price: 230,
+    length: 18,
+    width: 7,
+    height: 18,
+    img: `${require("../Components/Images/Bags/Bag0441.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0441.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0442.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0443.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "73",
+    title: "Half Watermellon",
+    category: "Bags",
+    price: 220,
+    Diameter:25,
+    width:10,
+    img: `${require("../Components/Images/Bags/Bag0321.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0321.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0322.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0323.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0324.jfif")}`,
+      },
+    ]
+  },
+  {
+    id: "74",
+    title: "Stair white Dustypink Canva ",
+    category: "Bags",
+    price: 250,
+    length:22,
+    width:8,
+    height:12,
+    img: `${require("../Components/Images/Bags/Bag0311.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0311.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0312.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0313.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0314.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0315.jfif")}`,
+      },
+    ]
+  },
+  
+  {
+    id: "75",
+    title: "Janja Black & white Canva",
+    category: "Bags",
+    price: 230,
+    length: 18,
+    width: 7,
+    height: 18,
+    img: `${require("../Components/Images/Bags/Bag0411.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0411.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0412.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0413.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0414.jfif")}`,
+      },
+
+    ]
+  },
+  
+  
+  {
+    id: "76",
+    title: "Old Gold",
+    category: "Bags",
+    price: 400,
+    length: 33,
+    width: 10,
+    height: 28,
+    img: `${require("../Components/Images/Bags/Bag0471.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0471.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0472.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0473.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0474.jfif")}`,
+      },
+
+    ]
+  },
+  
+  {
+    id: "78",
+    title: "coster Hey bag",
+    category: "Hey Bags",
+    price: 350,
+    Diameter: 35,
+    width: 10,
+    img: `${require("../Components/Images/HeyBags/Hey091.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey091.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey092.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey093.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey095.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Hey096.jfif")}`,
+      },
+
+    ]
+  },
+  
+  {
+    id: "77",
+    title: "Makrame Square Hey bag",
+    category: "Hey Bags",
+    price: 250,
+    length: 18,
+    width: 9,
+    height: 22,
+    img: `${require("../Components/Images/HeyBags/Bag081.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag081.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag082.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/HeyBags/Bag083.jfif")}`,
+      },
+      
+
     ]
   },
 ]
