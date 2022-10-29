@@ -1263,10 +1263,6 @@ export default [
       },
       {
         image:
-          `${require("../Components/Images/Bags/Bag0272.jfif")}`,
-      },
-      {
-        image:
           `${require("../Components/Images/Bags/Bag0273.jfif")}`,
       },
       {
