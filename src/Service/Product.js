@@ -3,7 +3,9 @@ export default [
     id: "1",
     title: "Oysteric Hey Bag with macrame",
     category: "Hey Bags",
-    price: 4022.22,
+    price:300,
+    Diameter:33,
+    width:9,
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey011.jfif")}`,
     thumbnail: [
@@ -29,7 +31,10 @@ export default [
     id: "2",
     title: "Glasses Hey bag",
     category: "Hey Bags",
-    price: 4022.22,
+    price: 350,
+    length:25,
+    height:22,
+    width:12,
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey021.jfif")}`,
     thumbnail: [
@@ -66,7 +71,9 @@ export default [
     id: "4",
     title: "Orange Hey Macrame  ",
     category: "Hey Bags",
-    price: 4022.22,
+    price: 280,
+    length:18,
+    height:18,
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey031.jfif")}`,
     thumbnail: [
@@ -284,7 +291,7 @@ export default [
   },
   {
     id: "13",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Half Circle fish bone",
     category: "Hey Bags",
     price: 300,
     img: `${require("../Components/Images/HeyBags/Hey051.jfif")}`,
@@ -317,7 +324,7 @@ export default [
   },
   {
     id: "14",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Full circle Hey Bag",
     category: "Hey Bags",
     price: 300 ,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -393,7 +400,7 @@ export default [
   },
   {
     id: "17",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     "New Arrival":"yes",
@@ -406,7 +413,7 @@ export default [
   },
   {
     id: "18",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -418,7 +425,7 @@ export default [
   },
   {
     id: "19",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Scarf & Gloves Outfit",
     category: "Winter Clothes",
     price: 300,
     img: `${require("../Components/Images/WinterClothes/Clothes061.jfif")}`,
@@ -477,7 +484,7 @@ export default [
   },
   {
     id: "22",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Scarf & Gloves Outfit",
     category: "Winter Clothes",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -511,7 +518,7 @@ export default [
   },
   {
     id: "23",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -571,7 +578,7 @@ export default [
   },
   {
     id: "27",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -583,7 +590,7 @@ export default [
   },
   {
     id: "28",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -595,7 +602,7 @@ export default [
   },
   {
     id: "29",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -607,7 +614,7 @@ export default [
   },
   {
     id: "30",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -619,7 +626,7 @@ export default [
   },
   {
     id: "31",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -632,7 +639,7 @@ export default [
   },
   {
     id: "32",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Wall Hanger With Name",
     category: "Winter Clothes",
     price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes011.jfif")}`,
@@ -659,7 +666,7 @@ export default [
   },
   {
     id: "33",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Grey Scarf",
     category: "Winter Clothes",
     price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes021.jfif")}`,
@@ -686,7 +693,7 @@ export default [
   },
   {
     id: "34",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Scarf with buckets ",
     category: "Winter Clothes",
     price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes031.jfif")}`,
@@ -709,7 +716,7 @@ export default [
   },
   {
     id: "35",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Yellow Blover",
     category: "Winter Clothes",
     price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes041.jfif")}`,
@@ -756,7 +763,7 @@ export default [
   },
   {
     id: "37",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Classic Hey Bag",
     category: "Hey Bags",
     price: 300,
     AvailableColors:["Can be ordered With any Color You Want"],
@@ -778,9 +785,12 @@ export default [
   },
   {
     id: "38",
-    title: "Labore eumperspiciatis quia libero",
+    title: "Indian Hey bag",
     category: "Hey Bags",
     price: 300,
+    length:35,
+    height:30,
+    width:9,
     AvailableColors:["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey071.jfif")}`,
     thumbnail: [
@@ -1216,35 +1226,7 @@ export default [
           `${require("../Components/Images/Box/Box023.jfif")}`,
       }]
   },
-  {
-    id: "53",
-    title: "Brown Chess",
-    category: "Bags",
-    price: 4022.22,
-    img: `${require("../Components/Images/Bags/BAg0261.jfif")}`,
-    thumbnail: [
-      {
-        image:
-          `${require("../Components/Images/Bags/BAg0261.jfif")}`,
-      },
-      {
-        image:
-          `${require("../Components/Images/Bags/Bag0262.jfif")}`,
-      },
-      {
-        image:
-          `${require("../Components/Images/Bags/BAg0263.jfif")}`,
-      },
-      {
-        image:
-          `${require("../Components/Images/Bags/BAg0264.jfif")}`,
-      },
-      {
-        image:
-          `${require("../Components/Images/Bags/BAg0265.jfif")}`,
-      },
-    ]
-  },
+ 
   {
     id: "54",
     title: "Black Flower تطريز  ",
