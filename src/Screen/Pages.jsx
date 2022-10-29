@@ -16,7 +16,6 @@ export default function Pages() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
           <Route path="/Item/:productId" element={<Item />} />
           <Route path="/Shop" element={<Shop />} />
           <Route path="/About" element={<About />} />

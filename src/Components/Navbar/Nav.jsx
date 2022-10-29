@@ -25,7 +25,8 @@ export default function Nav() {
             <div className="hidden md:block">
               <div className="justify-center flex items-baseline space-x-4">
                 <NavLink
-                  to={"/Home"}
+                  to={"/"}
+                  end
                   exactactiveclassname="is-active"
                   className=" hover:bg-topcolor hover:text-white text-topcolor px-3 py-2 rounded-md text-sm font-medium"
                 >
@@ -35,6 +36,7 @@ export default function Nav() {
                   return (
                     <NavLink
                       to={`${link.link}`}
+                      end
                       key={index}
                       activeclassname="is-active"
                       className="text-topcolor hover:bg-topcolor hover:text-white px-3 py-2 rounded-md text-sm font-medium"
