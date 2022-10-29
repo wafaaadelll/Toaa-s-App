@@ -15,20 +15,6 @@ import Product from "../../Service/Product";
 export default function Swipe() {
   SwiperCore.use([Autoplay]);
   AOS.init();
-  const NewArival = [
-    {
-      link: `${require("../Images/c6.jpg")}`,
-    },
-    {
-      link: `${require("../Images/c7.jpg")}`,
-    },
-    {
-      link: `${require("../Images/c8.jpg")}`,
-    },
-    {
-      link: `${require("../Images/c5.jpg")}`,
-    },
-  ];
   return (
     <div>
       <div
@@ -75,11 +61,7 @@ export default function Swipe() {
           {Product.map((item, index) => {
             return item["New Arrival"] ? (
               <SwiperSlide key={index}>
-                <img
-                  src={NewArival.link}
-                  alt=""
-                  className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
-                />
+                <img src={item.img} alt="" className="w-96 h-60" />
               </SwiperSlide>
             ) : (
               ""

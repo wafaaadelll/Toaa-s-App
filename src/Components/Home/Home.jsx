@@ -28,20 +28,6 @@ export default function Home() {
       link: `${require("../Images/c5.jpg")}`,
     },
   ];
-  const NewArival = [
-    {
-      link: `${require("../Images/c6.jpg")}`,
-    },
-    {
-      link: `${require("../Images/c7.jpg")}`,
-    },
-    {
-      link: `${require("../Images/c8.jpg")}`,
-    },
-    {
-      link: `${require("../Images/c5.jpg")}`,
-    },
-  ];
   SwiperCore.use([Autoplay]);
   return (
     <div className="mx-auto text-center">
@@ -76,8 +62,7 @@ export default function Home() {
               <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 relative">
                 <a href="#">
                   <img
-                    src={NewArival.link}
-                    alt=""
+                    src={prod.img}
                     className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
                   />
                 </a>
