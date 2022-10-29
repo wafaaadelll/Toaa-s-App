@@ -28,7 +28,7 @@ export default function Nav() {
                   to={"/"}
                   end
                   exactactiveclassname="is-active"
-                  className=" hover:bg-topcolor hover:text-white text-topcolor px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:border-b-2 border-topcolor hover:text-black text-topcolor px-3 py-2 text-sm font-medium"
                 >
                   Home
                 </NavLink>
@@ -39,7 +39,7 @@ export default function Nav() {
                       end
                       key={index}
                       activeclassname="is-active"
-                      className="text-topcolor hover:bg-topcolor hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className="text-topcolor hover:border-b-2 border-topcolor hover:text-black px-3 py-2 text-sm font-medium"
                     >
                       {link.title}
                     </NavLink>
