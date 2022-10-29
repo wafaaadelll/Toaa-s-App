@@ -9,20 +9,31 @@ import Contact from "../Components/Contact/Contact";
 import Scrolling from "../scrolling";
 import Offers from "../Components/Offers/Offers";
 import Footer from "../Components/Footer/Footer";
+import Errorpage from "../Components/ErrorPage/Errorpage";
+
+const layout = (component) => {
+  return (
+    <>
+      <Nav />
+      {component}
+      <Footer />
+    </>
+  );
+};
+
 export default function Pages() {
   return (
     <div>
       <Scrolling>
-        <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Item/:productId" element={<Item />} />
-          <Route path="/Shop" element={<Shop />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Offer" element={<Offers />} />
+          <Route path="/" element={layout(<Home />)} />
+          <Route path="/Item/:productId" element={layout(<Item />)} />
+          <Route path="/Shop" element={layout(<Shop />)} />
+          <Route path="/About" element={layout(<About />)} />
+          <Route path="/Contact" element={layout(<Contact />)} />
+          <Route path="/Offer" element={layout(<Offers />)} />
+          <Route path="*" element={<Errorpage />} />
         </Routes>
-        <Footer />
       </Scrolling>
     </div>
   );

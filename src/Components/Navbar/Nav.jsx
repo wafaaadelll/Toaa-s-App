@@ -13,6 +13,7 @@ import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
+    { title: "Home", link: "/" },
     { title: "About", link: "/About" },
     { title: "Shop", link: "/Shop" },
     { title: "Contact", link: "/Contact" },
@@ -24,21 +25,12 @@ export default function Nav() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="hidden md:block">
               <div className="justify-center flex items-baseline space-x-4">
-                <NavLink
-                  to={"/"}
-                  end
-                  exactactiveclassname="is-active"
-                  className=" hover:border-b-2 border-topcolor hover:text-black text-topcolor px-3 py-2 text-sm font-medium"
-                >
-                  Home
-                </NavLink>
                 {links.map((link, index) => {
                   return (
                     <NavLink
                       to={`${link.link}`}
                       end
                       key={index}
-                      activeclassname="is-active"
                       className="text-topcolor hover:border-b-2 border-topcolor hover:text-black px-3 py-2 text-sm font-medium"
                     >
                       {link.title}
