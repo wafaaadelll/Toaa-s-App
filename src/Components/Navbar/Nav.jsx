@@ -43,7 +43,7 @@ export default function Nav() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-transparent inline-flex items-center justify-center p-2 text-topcolor"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -52,7 +52,7 @@ export default function Nav() {
                   <svg
                     className="block h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    fill="#824444"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     aria-hidden="true"
@@ -68,7 +68,7 @@ export default function Nav() {
                   <svg
                     className="block h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    fill="#824444"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     aria-hidden="true"
@@ -96,40 +96,18 @@ export default function Nav() {
             {(ref) => (
               <div className="md:hidden" id="mobile-menu">
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <a
-                    href="#"
-                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Dashboard
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Team
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Projects
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Calendar
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Reports
-                  </a>
+                  {links.map((link, index) => {
+                    return (
+                      <NavLink
+                        to={`${link.link}`}
+                        end
+                        key={index}
+                        className="text-topcolor hover:border-b-2 border-topcolor hover:text-black px-3 py-2 text-sm font-medium"
+                      >
+                        {link.title}
+                      </NavLink>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -148,15 +126,21 @@ export default function Nav() {
             className="navbar mx-auto"
           >
             <SwiperSlide className="font-semibold text-gray-600">
-              <span className="text-topcolor">NOTE : </span>WE CAN MAKE ANY
-              DESIGN YOU WANT
+              <div className="w-3/4 mx-auto">
+                <span className="text-topcolor">NOTE : </span>WE CAN MAKE ANY
+                DESIGN YOU WANT
+              </div>
             </SwiperSlide>
             <SwiperSlide className="font-semibold text-gray-600">
-              <span className="text-topcolor">NOTE : </span>YOU CAN CHOOSE WHAY
-              COLOR TO BE
+              <div className="w-3/4 mx-auto">
+                <span className="text-topcolor">NOTE : </span>YOU CAN CHOOSE
+                WHAY COLOR TO BE
+              </div>
             </SwiperSlide>
             <SwiperSlide className="font-semibold text-gray-600">
-              <span className="text-topcolor">NOTE : </span>HAPPY TO HELP YOU
+              <div className="w-3/4 mx-auto">
+                <span className="text-topcolor">NOTE : </span>HAPPY TO HELP YOU
+              </div>
             </SwiperSlide>
           </Swiper>{" "}
         </nav>
@@ -178,7 +162,7 @@ export default function Nav() {
         </p>
       </nav>
       <section className="whatsapp">
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/201113747397">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/201228812605">
           {" "}
           <img
             alt="Chat on WhatsApp"

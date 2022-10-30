@@ -93,8 +93,7 @@ export default function Contact() {
             </h3>
             <hr />
             <div className="sm:mt-0 text-left pt-3">
-              <p>+01228812605</p>
-              <p>+01066859655</p>
+              <p>smorsy25699@gmail.com</p>
             </div>
           </div>
           <div className="mt-10 ">

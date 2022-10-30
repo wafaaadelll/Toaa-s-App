@@ -403,7 +403,6 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    "New Arrival": "yes",
     AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/Hanger0111.jfif")}`,
     thumbnail: [{
@@ -471,7 +470,6 @@ export default [
     title: "Macrame with Lether Cover SLY",
     category: "Bags",
     price: 300,
-    "New Arrival": "yes",
     length: 25,
     width: 7,
     height: 12,
@@ -546,7 +544,6 @@ export default [
     category: "Macrame wall hanging",
     price: 300,
 
-    "New Arrival": "yes",
     AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger031.jfif")}`,
     thumbnail: [{
@@ -1953,9 +1950,9 @@ export default [
     title: "Circle crystall bag",
     category: "Bags",
     price: 250,
-    length: 18,
-    width: 9,
-    height: 22,
+    length: 23,
+    width: 10,
+    height: 17,
     "New Arrival": "yes",
 
     img: `${require("../Components/Images/Bags/Bag0903.jfif")}`,
@@ -1976,6 +1973,39 @@ export default [
       {
         image:
           `${require("../Components/Images/Bags/Bag0905.jfif")}`,
+      },
+
+    ]
+  },
+
+  {
+    id: "79",
+    title: "Box",
+    category: "Boxes",
+    price: 70,
+    length: 15,
+    width: 15,
+    height: 10,
+    "New Arrival": "yes",
+
+    img: `${require("../Components/Images/Box/box045.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Box/box045.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Box/box046.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Box/box047.jfif")}`,
+      },
+
+      {
+        image:
+          `${require("../Components/Images/Box/box048.jfif")}`,
       },
 
     ]
