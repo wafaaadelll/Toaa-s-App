@@ -3,10 +3,10 @@ export default [
     id: "1",
     title: "Oysteric Hey Bag with macrame",
     category: "Hey Bags",
-    price:300,
-    Diameter:33,
-    width:9,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    price: 300,
+    Diameter: 33,
+    width: 9,
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey011.jfif")}`,
     thumbnail: [
       {
@@ -32,10 +32,10 @@ export default [
     title: "Glasses Hey bag",
     category: "Hey Bags",
     price: 350,
-    length:25,
-    height:22,
-    width:12,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    length: 25,
+    height: 22,
+    width: 12,
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey021.jfif")}`,
     thumbnail: [
       {
@@ -52,7 +52,7 @@ export default [
     Length: 15,
     WithCover: "Yes",
     Note: "If It with tipper Add Extra Price (15) ",
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Box/Box021.jfif")}`,
     thumbnail: [
       {
@@ -72,9 +72,9 @@ export default [
     title: "Orange Hey Macrame  ",
     category: "Hey Bags",
     price: 280,
-    length:18,
-    height:18,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    length: 18,
+    height: 18,
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey031.jfif")}`,
     thumbnail: [
       {
@@ -91,7 +91,7 @@ export default [
     length: 28,
     width: 7,
     height: 18,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag011.jfif")}`,
     thumbnail: [{
       image:
@@ -118,7 +118,7 @@ export default [
     length: 22,
     width: 7,
     height: 12,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag021.jfif")}`,
     thumbnail: [{
       image:
@@ -147,7 +147,7 @@ export default [
     price: 220,
     Diameter: 17,
     width: 7,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag031.jfif")}`,
     thumbnail: [{
       image:
@@ -173,7 +173,7 @@ export default [
     length: 18,
     width: 9,
     height: 18,
-    AvailableColors:["Gold"],
+    AvailableColors: ["Gold"],
     img: `${require("../Components/Images/Bags/Bag041.jfif")}`,
     thumbnail: [{
       image:
@@ -207,7 +207,7 @@ export default [
     category: "Bags",
     price: 250,
     Diameter: 25,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag051.jfif")}`,
     thumbnail: [{
       image:
@@ -226,7 +226,7 @@ export default [
     length: 20,
     width: 6,
     height: 16,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag061.jfif")}`,
     thumbnail: [{
       image:
@@ -245,7 +245,7 @@ export default [
     length: 20,
     width: 8,
     height: 16,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag071.jfif")}`,
     thumbnail: [
       {
@@ -278,7 +278,7 @@ export default [
     length: 20,
     width: 8,
     height: 16,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag081.jfif")}`,
     thumbnail: [{
       image:
@@ -326,8 +326,8 @@ export default [
     id: "14",
     title: "Full circle Hey Bag",
     category: "Hey Bags",
-    price: 300 ,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    price: 300,
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey041.jfif")}`,
     thumbnail: [
       {
@@ -363,7 +363,7 @@ export default [
     length: 20,
     width: 5,
     height: 16,
-    AvailableColors:["Havan , Red , Grey , Black , White , Baby blue"],
+    AvailableColors: ["Havan , Red , Grey , Black , White , Baby blue"],
     img: `${require("../Components/Images/Bags/Bag091.jfif")}`,
     thumbnail: [{
       image:
@@ -377,7 +377,7 @@ export default [
     price: "45 (change by changing color)",
     Diameter: 10,
     WithCover: "No ",
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     Note: "If It with tipper Add 15 , Only With Diameter 15 , 20 It will have a tipper ",
     img: `${require("../Components/Images/Box/Box011.jfif")}`,
     thumbnail: [
@@ -403,8 +403,8 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    "New Arrival":"yes",
-    AvailableColors:["Can be ordered With any Color You Want"],
+    "New Arrival": "yes",
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/Hanger0111.jfif")}`,
     thumbnail: [{
       image:
@@ -416,7 +416,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/Hanger0101.jfif")}`,
     thumbnail: [{
       image:
@@ -458,8 +458,8 @@ export default [
     length: 28,
     width: 7,
     height: 18,
-    offer:30,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    offer: 30,
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0101.jfif")}`,
     thumbnail: [{
       image:
@@ -471,11 +471,11 @@ export default [
     title: "Macrame with Lether Cover SLY",
     category: "Bags",
     price: 300,
-    "New Arrival":"yes",
+    "New Arrival": "yes",
     length: 25,
     width: 7,
     height: 12,
-    AvailableColors:["Havan , Blue "],
+    AvailableColors: ["Havan , Blue "],
     img: `${require("../Components/Images/Bags/Bag0111.jfif")}`,
     thumbnail: [{
       image:
@@ -487,7 +487,7 @@ export default [
     title: "Scarf & Gloves Outfit",
     category: "Winter Clothes",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WinterClothes/Clothes051.jfif")}`,
     thumbnail: [{
       image:
@@ -521,7 +521,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger011.jfif")}`,
     thumbnail: [{
       image:
@@ -533,7 +533,7 @@ export default [
     title: "Aabore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger021.jfif")}`,
     thumbnail: [{
       image:
@@ -545,9 +545,9 @@ export default [
     title: "Cabore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
-    
+
     "New Arrival": "yes",
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger031.jfif")}`,
     thumbnail: [{
       image:
@@ -569,7 +569,7 @@ export default [
     title: "Babore eumperspiciatis quia libero",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger041.jfif")}`,
     thumbnail: [{
       image:
@@ -581,7 +581,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger051.jfif")}`,
     thumbnail: [{
       image:
@@ -593,7 +593,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger061.jfif")}`,
     thumbnail: [{
       image:
@@ -605,7 +605,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger071.jfif")}`,
     thumbnail: [{
       image:
@@ -617,7 +617,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger081.jfif")}`,
     thumbnail: [{
       image:
@@ -629,7 +629,7 @@ export default [
     title: "Wall Hanger With Name",
     category: "Macrame wall hanging",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/WallHanger/hanger091.jfif")}`,
     thumbnail: [{
       image:
@@ -748,7 +748,7 @@ export default [
     price: "65",
     Diameter: 15,
     WithCover: "Yes",
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     Note: "If It with tipper Add 15 , Only With Diameter 15 , 20 It will have a tipper ,Price will be chanaged by changing the Yarn Type or the color ",
     img: `${require("../Components/Images/Box/Box031.jfif")}`,
     thumbnail: [
@@ -766,7 +766,7 @@ export default [
     title: "Classic Hey Bag",
     category: "Hey Bags",
     price: 300,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey061.jfif")}`,
     thumbnail: [
       {
@@ -788,10 +788,10 @@ export default [
     title: "Indian Hey bag",
     category: "Hey Bags",
     price: 300,
-    length:35,
-    height:30,
-    width:9,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    length: 35,
+    height: 30,
+    width: 9,
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey071.jfif")}`,
     thumbnail: [
       {
@@ -812,7 +812,7 @@ export default [
     price: 250,
     Diameter: 15,
     height: 18,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0121.jfif")}`,
     thumbnail: [
       {
@@ -841,7 +841,7 @@ export default [
     length: 22,
     width: 5,
     height: 15,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0131.jfif")}`,
     thumbnail: [
       {
@@ -870,10 +870,10 @@ export default [
     length: 18,
     width: 8,
     height: 10,
-        offer:10,
+    offer: 10,
 
-    AvailableColors:["Havan , Red , Grey , Black , White , Baby blue "],
-    Note:"Ask for new colors",
+    AvailableColors: ["Havan , Red , Grey , Black , White , Baby blue "],
+    Note: "Ask for new colors",
     img: `${require("../Components/Images/Bags/Bag0143.jfif")}`,
     thumbnail: [
       {
@@ -902,9 +902,9 @@ export default [
     length: 18,
     width: 8,
     height: 10,
-    AvailableColors:["Havan , Red , Grey , Black , White , Baby blue "],
-    Note:"Ask for new colors",
-        img: `${require("../Components/Images/Bags/Bag0151.jfif")}`,
+    AvailableColors: ["Havan , Red , Grey , Black , White , Baby blue "],
+    Note: "Ask for new colors",
+    img: `${require("../Components/Images/Bags/Bag0151.jfif")}`,
     thumbnail: [
       {
         image:
@@ -929,7 +929,7 @@ export default [
     length: 25,
     width: 7,
     height: 12,
-    AvailableColors:["Dusty Pink"],
+    AvailableColors: ["Dusty Pink"],
     img: `${require("../Components/Images/Bags/Bag0161.jfif")}`,
     thumbnail: [
       {
@@ -967,9 +967,9 @@ export default [
     length: 22,
     width: 7,
     height: 18,
-        offer:10,
+    offer: 10,
 
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0171.jfif")}`,
     thumbnail: [
       {
@@ -1002,7 +1002,7 @@ export default [
     length: 22,
     width: 7,
     height: 18,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0181.jfif")}`,
     thumbnail: [
       {
@@ -1034,7 +1034,7 @@ export default [
     price: 350,
     Diameter: 20,
     width: 10,
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Bags/Bag0191.jfif")}`,
     thumbnail: [
       {
@@ -1176,7 +1176,7 @@ export default [
     length: 16,
     width: 6,
     height: 18,
-        offer:20,
+    offer: 20,
 
     img: `${require("../Components/Images/Bags/Bag0241.jfif")}`,
     thumbnail: [
@@ -1211,7 +1211,7 @@ export default [
     Length: 15,
     WithCover: "No",
     Note: "If It with tipper Add Extra Price (+15) ",
-    AvailableColors:["Can be ordered With any Color You Want"],
+    AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/Box/Box021.jfif")}`,
     thumbnail: [
       {
@@ -1226,7 +1226,7 @@ export default [
           `${require("../Components/Images/Box/Box023.jfif")}`,
       }]
   },
- 
+
   {
     id: "54",
     title: "Black Flower تطريز  ",
@@ -1235,7 +1235,7 @@ export default [
     length: 25,
     width: 12,
     height: 28,
-        offer:15,
+    offer: 15,
 
     img: `${require("../Components/Images/Bags/Bag0271.jfif")}`,
     thumbnail: [
@@ -1292,7 +1292,7 @@ export default [
     length: 16,
     width: 5,
     height: 12,
-    offer:10,
+    offer: 10,
     img: `${require("../Components/Images/Bags/Bag0291.jfif")}`,
     thumbnail: [
       {
@@ -1315,8 +1315,8 @@ export default [
     category: "Hey Bags",
     price: 300,
     price: 250,
-    Diameter:30,
-    width:7,
+    Diameter: 30,
+    width: 7,
     img: `${require("../Components/Images/HeyBags/Bag0341.jfif")}`,
     thumbnail: [
       {
@@ -1346,9 +1346,9 @@ export default [
     title: "Truffel Bag",
     category: "Hey Bags",
     price: 220,
-    length:15,
-    height:18,
-    width:22,
+    length: 15,
+    height: 18,
+    width: 22,
     img: `${require("../Components/Images/HeyBags/Bag0334.jfif")}`,
     thumbnail: [
       {
@@ -1375,7 +1375,7 @@ export default [
     id: "59",
     title: "Scarf & gloves outfit",
     category: "Winter Clothes",
-    price:"variable",
+    price: "variable",
     img: `${require("../Components/Images/WinterClothes/Clothes0141.jfif")}`,
     thumbnail: [{
       image:
@@ -1440,7 +1440,7 @@ export default [
         `${require("../Components/Images/WinterClothes/Clothes0155.jfif")}`,
     }
       ,
-    
+
     ]
   },
   {
@@ -1448,8 +1448,8 @@ export default [
     title: "Green Mandela",
     category: "Bags",
     price: 350,
-    Diameter:35,
-    width:7,
+    Diameter: 35,
+    width: 7,
     img: `${require("../Components/Images/Bags/Bag0331.jfif")}`,
     thumbnail: [
       {
@@ -1475,9 +1475,9 @@ export default [
     title: "Back Bag",
     category: "Bags",
     price: 250,
-    length:22,
-    width:12,
-    height:28,
+    length: 22,
+    width: 12,
+    height: 28,
     img: `${require("../Components/Images/Bags/Bag0461.jfif")}`,
     thumbnail: [
       {
@@ -1515,9 +1515,9 @@ export default [
     title: "Royal White",
     category: "Bags",
     price: 280,
-    length:22,
-    width:9,
-    height:28,
+    length: 22,
+    width: 9,
+    height: 28,
     img: `${require("../Components/Images/Bags/Bag0421.jfif")}`,
     thumbnail: [
       {
@@ -1544,9 +1544,9 @@ export default [
     title: "Janja Kleem Bag",
     category: "Bags",
     price: 230,
-    length:22,
-    width:8,
-    height:12,
+    length: 22,
+    width: 8,
+    height: 12,
     img: `${require("../Components/Images/Bags/Bag0401.jfif")}`,
     thumbnail: [
       {
@@ -1565,7 +1565,7 @@ export default [
         image:
           `${require("../Components/Images/Bags/Bag0404.jfif")}`,
       },
-      
+
     ]
   },
   {
@@ -1573,8 +1573,8 @@ export default [
     title: "Janja Kleem Bag",
     category: "Bags",
     price: 250,
-    Diameter:26,
-    width:8,
+    Diameter: 26,
+    width: 8,
     img: `${require("../Components/Images/Bags/Bag0361.jfif")}`,
     thumbnail: [
       {
@@ -1593,7 +1593,7 @@ export default [
         image:
           `${require("../Components/Images/Bags/Bag0364.jfif")}`,
       },
-      
+
     ]
   },
   {
@@ -1601,8 +1601,8 @@ export default [
     title: "Oyster Rop Bag ",
     category: "Bags",
     price: 250,
-    Diameter:30,
-    width:9,
+    Diameter: 30,
+    width: 9,
     img: `${require("../Components/Images/Bags/Bag0371.jfif")}`,
     thumbnail: [
       {
@@ -1621,12 +1621,12 @@ export default [
         image:
           `${require("../Components/Images/Bags/Bag0374.jfif")}`,
       },
-      
+
       {
         image:
           `${require("../Components/Images/Bags/Bag0375.jfif")}`,
       },
-      
+
     ]
   },
   {
@@ -1634,9 +1634,9 @@ export default [
     title: "Royal Red",
     category: "Bags",
     price: 280,
-    length:22,
-    width:9,
-    height:28,
+    length: 22,
+    width: 9,
+    height: 28,
     img: `${require("../Components/Images/Bags/Bag0371.jfif")}`,
     thumbnail: [
       {
@@ -1655,12 +1655,12 @@ export default [
         image:
           `${require("../Components/Images/Bags/Bag0374.jfif")}`,
       },
-      
+
       {
         image:
           `${require("../Components/Images/Bags/Bag0375.jfif")}`,
       },
-      
+
     ]
   },
   {
@@ -1690,7 +1690,7 @@ export default [
           `${require("../Components/Images/Bags/Bag0394.jfif")}`,
       },
 
-      
+
     ]
   },
   {
@@ -1701,8 +1701,8 @@ export default [
     length: 18,
     width: 8,
     height: 10,
-    AvailableColors:["Havan , Red , Grey , Black , White , Baby blue "],
-    Note:"Ask for new colors",
+    AvailableColors: ["Havan , Red , Grey , Black , White , Baby blue "],
+    Note: "Ask for new colors",
     img: `${require("../Components/Images/Bags/Bag0451.jfif")}`,
     thumbnail: [
       {
@@ -1772,8 +1772,8 @@ export default [
     title: "Half Watermellon",
     category: "Bags",
     price: 220,
-    Diameter:25,
-    width:10,
+    Diameter: 25,
+    width: 10,
     img: `${require("../Components/Images/Bags/Bag0321.jfif")}`,
     thumbnail: [
       {
@@ -1799,9 +1799,9 @@ export default [
     title: "Stair white Dustypink Canva ",
     category: "Bags",
     price: 250,
-    length:22,
-    width:8,
-    height:12,
+    length: 22,
+    width: 8,
+    height: 12,
     img: `${require("../Components/Images/Bags/Bag0311.jfif")}`,
     thumbnail: [
       {
@@ -1826,7 +1826,7 @@ export default [
       },
     ]
   },
-  
+
   {
     id: "75",
     title: "Janja Black & white Canva",
@@ -1856,8 +1856,8 @@ export default [
 
     ]
   },
-  
-  
+
+
   {
     id: "76",
     title: "Old Gold",
@@ -1887,7 +1887,7 @@ export default [
 
     ]
   },
-  
+
   {
     id: "78",
     title: "coster Hey bag",
@@ -1920,7 +1920,7 @@ export default [
 
     ]
   },
-  
+
   {
     id: "77",
     title: "Makrame Square Hey bag",
@@ -1943,7 +1943,40 @@ export default [
         image:
           `${require("../Components/Images/HeyBags/Bag083.jfif")}`,
       },
-      
+
+
+    ]
+  },
+
+  {
+    id: "78",
+    title: "Circle crystall bag",
+    category: "Bags",
+    price: 250,
+    length: 18,
+    width: 9,
+    height: 22,
+    "New Arrival": "yes",
+
+    img: `${require("../Components/Images/Bags/Bag0903.jfif")}`,
+    thumbnail: [
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0903.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0902.jfif")}`,
+      },
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0904.jfif")}`,
+      },
+
+      {
+        image:
+          `${require("../Components/Images/Bags/Bag0905.jfif")}`,
+      },
 
     ]
   },
