@@ -103,7 +103,7 @@ export default function Nav() {
         <div className="flex-shrink-0">
           <img
             className="h-24 w-44 mx-auto"
-            src={process.env.PUBLIC_URL + "Images/logo.png"}
+            src={process.env.PUBLIC_URL + "/Images/logo.png"}
             alt="LOGO"
           />
           {/* test */}
