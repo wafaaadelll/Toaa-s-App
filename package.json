@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "create-react-app": "^5.0.1",
     "react": "^18.2.0",
     "react-carousel-minimal": "^1.4.1",
     "react-circular-progressbar": "^2.1.0",
