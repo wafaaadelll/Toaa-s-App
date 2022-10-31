@@ -6,7 +6,10 @@ module.exports = {
                 "topcolor" : "#824444",
               "finalcolor" : "rgb(242 242 179)",
               "color" : "#eeeece",
-            }},
+    },
+     height: {
+        100: "314px"
+    }},
   },
   plugins: [],
 }

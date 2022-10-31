@@ -111,14 +111,15 @@ export default function Footer() {
                   target="_blank"
                 >
                   {" "}
-                 HeartMade  by
-                </a>
+                  HeartMade by
+                </a>{" "}
                 <a
                   href="mailto:wafaaadelll99@gmail.com"
                   className="text-blueGray-500 hover:text-blueGray-800"
                 >
-                  Wafaa 
-                </a>
+                  Wafaa
+                </a>{" "}
+                &{" "}
                 <a
                   href="mailto:smorsy25699@gmail.com"
                   className="text-blueGray-500 hover:text-blueGray-800"

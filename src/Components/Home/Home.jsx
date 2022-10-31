@@ -77,11 +77,10 @@ export default function Home() {
         })}
       </div>
       {/* <Categories naming={"Hey Bags"} /> */}
-      <div className="mx-auto text-center bg-color py-12 mt-7">
+      <div className="mx-auto text-center bg-color mt-7">
         <NavLink to={"/Offer"}>
           <img
-            className="text-center mx-auto h-96"
-            style={{ width: "85%" }}
+            className="text-center mx-auto h-96 w-full"
             src="https://img.freepik.com/free-vector/offer-deals-banner-red-background_1017-27332.jpg?w=2000"
             alt=""
           />
