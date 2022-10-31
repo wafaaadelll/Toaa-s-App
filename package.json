@@ -47,10 +47,6 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "node": "v16.15.0",
-    "npm": "8.13.1"
-  },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.16",
