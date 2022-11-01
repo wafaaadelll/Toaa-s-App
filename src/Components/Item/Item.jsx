@@ -41,7 +41,7 @@ export default function Item() {
               </thead>
               <tbody>
                 {thisProduct.width ? (
-                  <tr className="bg-responsive border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
@@ -56,7 +56,7 @@ export default function Item() {
                   ""
                 )}
                 {thisProduct.height ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
@@ -71,7 +71,7 @@ export default function Item() {
                   ""
                 )}
                 {thisProduct.Length ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
@@ -87,7 +87,7 @@ export default function Item() {
                 )}
 
                 {thisProduct.Diameter ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
@@ -102,7 +102,7 @@ export default function Item() {
                   ""
                 )}
                 {thisProduct.WithCover ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-white"
@@ -117,7 +117,7 @@ export default function Item() {
                   ""
                 )}
                 {thisProduct.Note ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
@@ -130,7 +130,7 @@ export default function Item() {
                   ""
                 )}
                 {thisProduct.AvailableColors ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-finalcolor border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"

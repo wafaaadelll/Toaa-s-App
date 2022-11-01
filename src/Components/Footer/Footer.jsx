@@ -6,7 +6,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div>
-      <footer className="relative bg-color pt-8 mt-7 pb-6">
+      <footer className="relative bg-finalcolor pt-8 mt-7 pb-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-left lg:text-left">
             <div className="w-full lg:w-6/12 px-4">

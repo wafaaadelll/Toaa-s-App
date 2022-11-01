@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
       {/* <Categories naming={"Hey Bags"} /> */}
-      <div className="mx-auto text-center bg-color mt-7">
+      <div className="mx-auto text-center bg-finalcolor mt-7">
         <NavLink to={"/Offer"}>
           <img
             className="text-center mx-auto h-100 w-full"

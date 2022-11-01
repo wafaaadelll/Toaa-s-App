@@ -93,7 +93,10 @@ export default function Nav() {
             leaveTo="opacity-0 scale-95"
           >
             {(ref) => (
-              <div className="md:hidden bg-color h-screen" id="mobile-menu">
+              <div
+                className="md:hidden bg-finalcolor h-screen"
+                id="mobile-menu"
+              >
                 <div ref={ref} className="px-2 pt-2 pb-3 sm:px-3">
                   {links.map((link, index) => {
                     return (
