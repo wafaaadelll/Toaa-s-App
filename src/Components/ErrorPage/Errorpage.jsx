@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 export default function Errorpage() {
   return (
     <section>
-      <div class="bg-black text-white">
-        <div class="flex h-screen">
-          <div class="m-auto text-center">
+      <div className="bg-black text-white">
+        <div className="flex h-screen">
+          <div className="m-auto text-center">
             <div>
               <svg
                 width="631"
@@ -267,12 +267,12 @@ export default function Errorpage() {
                 </defs>
               </svg>
             </div>
-            <p class="text-sm md:text-base text-finalcolor p-2 mb-4">
+            <p className="text-sm md:text-base text-finalcolor p-2 mb-4">
               The SubPage you were looking for doesn't exist
             </p>
             <Link
               to={"/"}
-              class="bg-transparent hover:bg-finalcolor text-white hover:text-topcolor rounded shadow hover:shadow-lg py-2 px-4 border border-finalcolor hover:border-transparent"
+              className="bg-transparent hover:bg-finalcolor text-white hover:text-topcolor rounded shadow hover:shadow-lg py-2 px-4 border border-finalcolor hover:border-transparent"
             >
               Back To Home
             </Link>

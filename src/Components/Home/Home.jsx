@@ -60,12 +60,12 @@ export default function Home() {
           return prod["New Arrival"] ? (
             <div className="w-full rounded hover:shadow-2xl" key={index}>
               <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 relative">
-                <a href="#">
+                <NavLink to={`/Item/${prod.id}`}>
                   <img
                     src={prod.img}
                     className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
                   />
-                </a>
+                </NavLink>
                 <div className="py-3 text-gray-50 bg-topcolor">
                   <p>{prod.title}</p>
                 </div>

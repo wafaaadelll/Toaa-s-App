@@ -10,6 +10,7 @@ import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
 
 export default function Item() {
   const { productId } = useParams();
+  console.log(productId, "id");
   const thisProduct = Product.find((prod) => prod.id === productId);
   const [showModal, setShowModal] = useState(false);
   SwiperCore.use([Autoplay]);

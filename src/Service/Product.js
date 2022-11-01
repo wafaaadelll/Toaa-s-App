@@ -1057,7 +1057,7 @@ export default [
     ]
   },
   {
-    id: "51",
+    id: "47",
     title: "White & Turkouaz Triangles ",
     category: "Bags",
     price: 250,
@@ -1085,7 +1085,7 @@ export default [
     ]
   },
   {
-    id: "47",
+    id: "48",
     title: "Tiny Orang ",
     category: "Bags",
     price: 190,
@@ -1117,7 +1117,7 @@ export default [
     ]
   },
   {
-    id: "48",
+    id: "49",
     title: "Classic Canva Orange ",
     category: "Bags",
     price: 230,
@@ -1144,27 +1144,6 @@ export default [
       }
     ]
   },
-  // {
-  //   id: "49",
-  //   title: "Brown Chess",
-  //   category: "Bags",
-  //   price: 4022.22,
-  //   img: `${require("../Components/Images/Bags/Bag0231.jfif")}`,
-  //   thumbnail: [
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0231.jfif")}`,
-  //   },
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0232.jfif")}`,
-  //   },
-  //     {
-  //     image:
-  //       `${require("../Components/Images/Bags/Bag0233.jfif")}`,
-  //   },
-  // ]
-  // },
   {
     id: "50",
     title: "Redy Kleem ",
@@ -1174,7 +1153,6 @@ export default [
     width: 6,
     height: 18,
     offer: 20,
-
     img: `${require("../Components/Images/Bags/Bag0241.jfif")}`,
     thumbnail: [
       {
@@ -1199,9 +1177,8 @@ export default [
       },
     ]
   },
-
   {
-    id: "52",
+    id: "51",
     title: " Boxes Package ",
     category: "Boxes",
     price: "65, change by changing size ",
@@ -1223,9 +1200,8 @@ export default [
           `${require("../Components/Images/Box/Box023.jfif")}`,
       }]
   },
-
   {
-    id: "54",
+    id: "52",
     title: "Black Flower تطريز  ",
     category: "Hey Bags",
     price: 350,
@@ -1251,7 +1227,7 @@ export default [
     ]
   },
   {
-    id: "55",
+    id: "53",
     title: "Black & Whiter Pearl Hands",
     category: "Bags",
     price: 230,
@@ -1282,7 +1258,7 @@ export default [
     ]
   },
   {
-    id: "56",
+    id: "54",
     title: "Tiny Green ",
     category: "Bags",
     price: 190,
@@ -1307,7 +1283,7 @@ export default [
     ]
   },
   {
-    id: "57",
+    id: "55",
     title: "Hey Rop Bag",
     category: "Hey Bags",
     price: 300,
@@ -1339,7 +1315,7 @@ export default [
     ]
   },
   {
-    id: "58",
+    id: "56",
     title: "Truffel Bag",
     category: "Hey Bags",
     price: 220,
@@ -1369,7 +1345,7 @@ export default [
   },
   ,
   {
-    id: "59",
+    id: "57",
     title: "Scarf & gloves outfit",
     category: "Winter Clothes",
     price: "variable",
@@ -1407,7 +1383,7 @@ export default [
   },
   ,
   {
-    id: "60",
+    id: "58",
     title: "Winter Scarf",
     category: "Winter Clothes",
     price: "variable",
@@ -1441,7 +1417,7 @@ export default [
     ]
   },
   {
-    id: "61",
+    id: "59",
     title: "Green Mandela",
     category: "Bags",
     price: 350,
@@ -1468,7 +1444,7 @@ export default [
     ]
   },
   {
-    id: "62",
+    id: "60",
     title: "Back Bag",
     category: "Bags",
     price: 250,
@@ -1508,7 +1484,7 @@ export default [
     ]
   },
   {
-    id: "63",
+    id: "61",
     title: "Royal White",
     category: "Bags",
     price: 280,
@@ -1537,7 +1513,7 @@ export default [
     ]
   },
   {
-    id: "64",
+    id: "62",
     title: "Janja Kleem Bag",
     category: "Bags",
     price: 230,
@@ -1566,7 +1542,7 @@ export default [
     ]
   },
   {
-    id: "65",
+    id: "63",
     title: "Janja Kleem Bag",
     category: "Bags",
     price: 250,
@@ -1594,7 +1570,7 @@ export default [
     ]
   },
   {
-    id: "66",
+    id: "64",
     title: "Oyster Rop Bag ",
     category: "Bags",
     price: 250,
@@ -1627,7 +1603,7 @@ export default [
     ]
   },
   {
-    id: "67",
+    id: "65",
     title: "Royal Red",
     category: "Bags",
     price: 280,
@@ -1661,7 +1637,7 @@ export default [
     ]
   },
   {
-    id: "68",
+    id: "66",
     title: "Classic Canva lyla ",
     category: "Bags",
     price: 230,
@@ -1691,7 +1667,7 @@ export default [
     ]
   },
   {
-    id: "69",
+    id: "67",
     title: "Black Organza",
     category: "Bags",
     price: 220,
@@ -1717,7 +1693,7 @@ export default [
     ]
   },
   {
-    id: "71",
+    id: "68",
     title: "Tiny Orang ",
     category: "Bags",
     price: 190,
@@ -1741,7 +1717,7 @@ export default [
     ]
   },
   {
-    id: "72",
+    id: "69",
     title: "  Mustard Grey Canva",
     category: "Bags",
     price: 230,
@@ -1765,7 +1741,7 @@ export default [
     ]
   },
   {
-    id: "73",
+    id: "70",
     title: "Half Watermellon",
     category: "Bags",
     price: 220,
@@ -1792,7 +1768,7 @@ export default [
     ]
   },
   {
-    id: "74",
+    id: "71",
     title: "Stair white Dustypink Canva ",
     category: "Bags",
     price: 250,
@@ -1823,9 +1799,8 @@ export default [
       },
     ]
   },
-
   {
-    id: "75",
+    id: "72",
     title: "Janja Black & white Canva",
     category: "Bags",
     price: 230,
@@ -1853,10 +1828,8 @@ export default [
 
     ]
   },
-
-
   {
-    id: "76",
+    id: "73",
     title: "Old Gold",
     category: "Bags",
     price: 400,
@@ -1884,9 +1857,8 @@ export default [
 
     ]
   },
-
   {
-    id: "78",
+    id: "74",
     title: "coster Hey bag",
     category: "Hey Bags",
     price: 350,
@@ -1917,9 +1889,8 @@ export default [
 
     ]
   },
-
   {
-    id: "77",
+    id: "75",
     title: "Makrame Square Hey bag",
     category: "Hey Bags",
     price: 250,
@@ -1944,16 +1915,15 @@ export default [
 
     ]
   },
-
   {
-    id: "78",
+    id: "76",
     title: "Circle crystall bag",
     category: "Bags",
     price: 250,
     length: 23,
     width: 10,
     height: 17,
-    "New Arrival": "yes",
+    NewArrival: true,
 
     img: `${require("../Components/Images/Bags/Bag0903.jfif")}`,
     thumbnail: [
@@ -1977,16 +1947,15 @@ export default [
 
     ]
   },
-
   {
-    id: "79",
+    id: "77",
     title: "Box",
     category: "Boxes",
     price: 70,
     length: 15,
     width: 15,
     height: 10,
-    "New Arrival": "yes",
+    NewArrival: true,
 
     img: `${require("../Components/Images/Box/box045.jfif")}`,
     thumbnail: [

@@ -42,9 +42,9 @@ export default function Nav() {
             <div className="-mr-2 flex lg:hidden">
               <label>
                 <input type="checkbox" />
-                <span class="menu">
+                <span className="menu">
                   {" "}
-                  <span class="hamburger"></span>{" "}
+                  <span className="hamburger"></span>{" "}
                 </span>
                 <ul>
                   {links.map((link, index) => {

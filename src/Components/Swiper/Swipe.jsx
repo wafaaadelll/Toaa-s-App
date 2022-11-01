@@ -11,6 +11,7 @@ import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Product from "../../Service/Product";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Swipe() {
   SwiperCore.use([Autoplay]);
@@ -58,10 +59,12 @@ export default function Swipe() {
           className="mySwipe mx-auto"
           style={{ width: "85%" }}
         >
-          {Product.map((item, index) => {
-            return item["New Arrival"] ? (
+          {Product.map((prod, index) => {
+            return prod.NewArrival ? (
               <SwiperSlide key={index}>
-                <img src={item.img} alt="" className="w-96 h-60" />
+                <NavLink to={`/Item/${prod.id}`}>
+                  <img src={prod.img} alt="" className="w-96 h-60" />
+                </NavLink>
               </SwiperSlide>
             ) : (
               ""
