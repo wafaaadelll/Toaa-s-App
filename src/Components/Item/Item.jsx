@@ -41,7 +41,7 @@ export default function Item() {
               </thead>
               <tbody>
                 {thisProduct.width ? (
-                  <tr className="bg-color border-b dark:border-gray-700">
+                  <tr className="bg-responsive border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
