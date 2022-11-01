@@ -21,7 +21,7 @@ export default function Nav() {
   return (
     <div>
       <div className="Nav">
-        <nav className="topnav h-10 lg:h-fit">
+        <nav className="topnav h-12 lg:h-fit">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="hidden lg:block">
               <div className="justify-center flex items-baseline space-x-4">

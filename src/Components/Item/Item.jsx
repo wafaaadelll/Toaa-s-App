@@ -44,7 +44,7 @@ export default function Item() {
                   <tr className="bg-responsive md:bg-yellow-200 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
                     >
                       Width
                     </th>
@@ -59,7 +59,7 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
                     >
                       Height
                     </th>
@@ -74,7 +74,7 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
                     >
                       Length
                     </th>
@@ -90,7 +90,7 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
                     >
                       Diameter
                     </th>
@@ -116,7 +116,7 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
                     >
                       Note
                     </th>
@@ -129,7 +129,7 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
                     >
                       Available Colors
                     </th>
