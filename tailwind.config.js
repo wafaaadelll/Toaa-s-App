@@ -7,7 +7,7 @@ module.exports = {
               "finalcolor" : "rgb(242 242 179)",
       "color": "#eeeece",
       "head": "#d5d5b1",
-              "responsive":"#eed589"
+              "responsive":"#f2e6c2"
     },
      height: {
         100: "450px"
