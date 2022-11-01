@@ -6,7 +6,8 @@ module.exports = {
                 "topcolor" : "#824444",
               "finalcolor" : "rgb(242 242 179)",
       "color": "#eeeece",
-              "head":"#d5d5b1"
+      "head": "#d5d5b1",
+              "responsive":"#fafae1"
     },
      height: {
         100: "450px"
