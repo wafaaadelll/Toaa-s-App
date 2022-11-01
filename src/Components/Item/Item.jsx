@@ -31,10 +31,10 @@ export default function Item() {
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase bg-head dark:text-gray-400">
                 <tr>
-                  <th scope="col" className="py-3 px-6 text-white">
+                  <th scope="col" className="py-3 px-6 text-black">
                     Product name
                   </th>
-                  <th scope="col" className="py-3 px-6 text-white">
+                  <th scope="col" className="py-3 px-6 text-black">
                     Description
                   </th>
                 </tr>
@@ -44,11 +44,11 @@ export default function Item() {
                   <tr className="bg-responsive md:bg-yellow-200 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap"
                     >
                       Width
                     </th>
-                    <td className="py-4 px-6">
+                    <td className="py-4 px-6 text-black ">
                       {thisProduct.width ? thisProduct.width + " sm" : "-"}
                     </td>
                   </tr>
@@ -59,11 +59,11 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap"
                     >
                       Height
                     </th>
-                    <td className="py-4 px-6">
+                    <td className="py-4 px-6 text-black">
                       {thisProduct.height ? thisProduct.height + " sm" : "-"}
                     </td>
                   </tr>
@@ -74,11 +74,11 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap"
                     >
                       Length
                     </th>
-                    <td className="py-4 px-6">
+                    <td className="py-4 px-6 text-black">
                       {thisProduct.length ? thisProduct.length + " sm" : "-"}
                     </td>
                   </tr>
@@ -90,11 +90,13 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap"
                     >
                       Diameter
                     </th>
-                    <td className="py-4 px-6">{thisProduct.Diameter} cm</td>
+                    <td className="py-4 px-6 text-black">
+                      {thisProduct.Diameter} cm
+                    </td>
                   </tr>
                 ) : (
                   ""
@@ -103,11 +105,13 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-white"
                     >
                       WithCover
                     </th>
-                    <td className="py-4 px-6">{thisProduct.WithCover}</td>
+                    <td className="py-4 px-6 text-black">
+                      {thisProduct.WithCover}
+                    </td>
                   </tr>
                 ) : (
                   ""
@@ -116,11 +120,11 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap"
                     >
                       Note
                     </th>
-                    <td className="py-4 px-6">{thisProduct.Note}</td>
+                    <td className="py-4 px-6 text-black">{thisProduct.Note}</td>
                   </tr>
                 ) : (
                   ""
@@ -129,11 +133,13 @@ export default function Item() {
                   <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                      className="py-4 px-6 font-medium text-black whitespace-nowrap"
                     >
                       Available Colors
                     </th>
-                    <td className="py-4 px-6">{thisProduct.AvailableColors}</td>
+                    <td className="py-4 px-6 text-black">
+                      {thisProduct.AvailableColors}
+                    </td>
                   </tr>
                 ) : (
                   ""
