@@ -6,9 +6,9 @@ import "./Offers.css";
 export default function Offers() {
   return (
     <div style={{ width: "85%" }} className="mx-auto">
-      <h1 className="underline italic text-4xl mt-5 font-semibold text-topcolor text-left">
-        OFFERS
-      </h1>
+      <div className="my-10">
+        <h2 className="text-5xl headtext font">Our Shop</h2>
+      </div>
       <section className="w-4/5 mx-auto mt-7 gap-2 grid md:grid-cols-2 lg:grid-cols-4">
         {Product.map((item, index) => {
           return item.offer ? (

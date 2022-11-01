@@ -6,6 +6,7 @@ export default [
     price: 300,
     Diameter: 33,
     width: 9,
+    bestSeller:true,
     AvailableColors: ["Can be ordered With any Color You Want"],
     img: `${require("../Components/Images/HeyBags/Hey011.jfif")}`,
     thumbnail: [
@@ -1343,7 +1344,6 @@ export default [
 
     ]
   },
-  ,
   {
     id: "57",
     title: "Scarf & gloves outfit",
@@ -1381,7 +1381,6 @@ export default [
     }
     ]
   },
-  ,
   {
     id: "58",
     title: "Winter Scarf",

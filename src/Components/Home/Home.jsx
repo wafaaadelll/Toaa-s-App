@@ -51,31 +51,39 @@ export default function Home() {
         })}
       </Swiper>
       {/* <Categories naming={"Winter Clothes"} /> */}
-      <div
-        data-aos="fade-up"
-        className="container space-y-2 grid-cols-1 md:grid-cols-2 lg:space-y-0 gap-10 grid lg:grid-cols-3 mt-5 mx-auto "
-        style={{ width: "85%" }}
-      >
-        {Product.map((prod, index) => {
-          return prod["New Arrival"] ? (
-            <div className="w-full rounded hover:shadow-2xl" key={index}>
-              <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 relative">
-                <NavLink to={`/Item/${prod.id}`}>
-                  <img
-                    src={prod.img}
-                    className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
-                  />
-                </NavLink>
-                <div className="py-3 text-gray-50 bg-topcolor">
-                  <p>{prod.title}</p>
+      <section>
+        <h3
+          className="font text-5xl text-left text-topcolor pt-5 my-10 mx-auto"
+          style={{ width: "85%" }}
+        >
+          Best Seller
+        </h3>{" "}
+        <div
+          data-aos="fade-up"
+          className="container space-y-2 grid-cols-1 md:grid-cols-2 lg:space-y-0 gap-10 grid lg:grid-cols-3 mt-5 mx-auto "
+          style={{ width: "85%" }}
+        >
+          {Product.map((prod, index) => {
+            return prod.bestSeller ? (
+              <div className="w-full rounded hover:shadow-2xl" key={index}>
+                <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 relative">
+                  <NavLink to={`/Item/${prod.id}`}>
+                    <img
+                      src={prod.img}
+                      className="h-96 w-full text-center mx-auto group-hover:mix-blend-soft-light hover:opacity-70 hover:-translate-y-0.5 hover:-translate-x-0.5 ease-in-out duration-300 "
+                    />
+                  </NavLink>
+                  <div className="py-3 text-gray-50 bg-topcolor">
+                    <p>{prod.title}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ) : (
-            ""
-          );
-        })}
-      </div>
+            ) : (
+              ""
+            );
+          })}
+        </div>
+      </section>
       {/* <Categories naming={"Hey Bags"} /> */}
       <div className="mx-auto text-center bg-color mt-7">
         <NavLink to={"/Offer"}>
