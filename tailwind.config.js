@@ -4,10 +4,9 @@ module.exports = {
   theme: {
     extend: {colors: {
                 "topcolor" : "#824444",
-              "finalcolor" : "rgb(242 242 179)",
-      "color": "#eeeece",
-      "head": "#d5d5b1",
-              "responsive":"#f4eaceb8"
+                "finalcolor" : "#f4eace",
+                "color": "#f4eace",
+                "responsive":"#f4eace"
     },
      height: {
         100: "450px"

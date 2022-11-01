@@ -106,7 +106,7 @@ export default function About() {
                       text={`${percentage.percent}%`}
                       styles={buildStyles({
                         pathColor: "#824444",
-                        trailColor: "#eeeece",
+                        trailColor: "#f4eace",
                         textColor: "gray",
                       })}
                     />

@@ -29,7 +29,7 @@ export default function Item() {
           </h2>
           <div className="overflow-x-auto relative shadow-md sm:rounded-lg ">
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-              <thead className="text-xs text-gray-700 uppercase bg-head dark:text-gray-400">
+              <thead className="text-xs text-gray-700 uppercase bg-topcolor dark:text-gray-400">
                 <tr>
                   <th scope="col" className="py-3 px-6 text-black">
                     Product name
@@ -41,7 +41,7 @@ export default function Item() {
               </thead>
               <tbody>
                 {thisProduct.width ? (
-                  <tr className="bg-responsive md:bg-yellow-200 border-b dark:border-gray-700">
+                  <tr className="bg-color border-b dark:border-gray-700">
                     <th
                       scope="row"
                       className="py-4 px-6 font-medium text-black whitespace-nowrap"
