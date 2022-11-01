@@ -21,7 +21,7 @@ export default function Nav() {
   return (
     <div>
       <div className="Nav">
-        <nav className="topnav h-12 lg:h-fit">
+        <nav className="topnav h-12 lg:h-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="hidden lg:block">
               <div className="justify-center flex items-baseline space-x-4">
@@ -116,7 +116,7 @@ export default function Nav() {
           </Transition>
         </nav>
       </div>
-      <nav className="bg-white pt-12">
+      <nav className="bg-white pt-14 pb-2">
         <Swiper
           navigation={true}
           modules={[Navigation]}
