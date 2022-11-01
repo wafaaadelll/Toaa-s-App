@@ -119,7 +119,7 @@ export default function Nav() {
           {" "}
           <img
             alt="Chat on WhatsApp"
-            src={process.env.PUBLIC_URL + "Images/whatsapp.png"}
+            src={process.env.PUBLIC_URL + "/whatsapp.png"}
           />
         </a>
       </section>

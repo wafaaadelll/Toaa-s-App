@@ -5,10 +5,11 @@ module.exports = {
     extend: {colors: {
                 "topcolor" : "#824444",
               "finalcolor" : "rgb(242 242 179)",
-              "color" : "#eeeece",
+      "color": "#eeeece",
+              "head":"#d5d5b1"
     },
      height: {
-        100: "314px"
+        100: "450px"
     }},
   },
   plugins: [],
