@@ -21,10 +21,10 @@ export default function Nav() {
   return (
     <div>
       <div className="Nav">
-        <nav className="topnav h-12 lg:h-12">
+        <nav className="topnav h-20 lg:h-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="hidden lg:block">
-              <div className="justify-center flex items-baseline space-x-4">
+              <div className="justify-center flex items-baseline space-x-4 pt-2">
                 {links.map((link, index) => {
                   return (
                     <NavLink
@@ -39,48 +39,42 @@ export default function Nav() {
                 })}
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 flex lg:hidden justify-between">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-transparent inline-flex items-center justify-center p-2 text-topcolor"
+                className="bg-transparent p-2 text-topcolor"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 {!isOpen ? (
                   <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 80"
+                    width="40"
+                    height="40"
                     fill="#824444"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
+                    <rect width="100" height="15" rx="10"></rect>
+                    <rect y="30" width="100" height="15" rx="10"></rect>
+                    <rect y="60" width="100" height="15" rx="10"></rect>
                   </svg>
                 ) : (
                   <svg
-                    className="block h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
+                    height="30"
+                    viewBox="0 0 329.26933 329"
+                    width="30"
                     fill="#824444"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
+                    <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
                   </svg>
                 )}
               </button>
+              <img
+                src={process.env.PUBLIC_URL + "/logo.PNG"}
+                alt=""
+                className="w-28 h-20 mt-2"
+              />
             </div>
           </div>
           <Transition
@@ -94,7 +88,7 @@ export default function Nav() {
           >
             {(ref) => (
               <div
-                className="md:hidden bg-finalcolor h-screen"
+                className="lg:hidden bg-finalcolor h-screen"
                 id="mobile-menu"
               >
                 <div ref={ref} className="px-2 pt-2 pb-3 sm:px-3">
@@ -119,7 +113,7 @@ export default function Nav() {
           </Transition>
         </nav>
       </div>
-      <nav className="bg-white pt-14 pb-2">
+      <nav className="bg-white pt-24 lg:pt-18 pb-2">
         <Swiper
           navigation={true}
           modules={[Navigation]}

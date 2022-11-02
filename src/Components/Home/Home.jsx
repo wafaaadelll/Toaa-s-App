@@ -88,7 +88,7 @@ export default function Home() {
       <div className="mx-auto text-center bg-finalcolor mt-7">
         <NavLink to={"/Offer"}>
           <img
-            className="text-center mx-auto h-100 w-full"
+            className="text-center mx-auto md:h-100 h-screen w-full"
             src={process.env.PUBLIC_URL + "/offer.png"}
             alt=""
           />
