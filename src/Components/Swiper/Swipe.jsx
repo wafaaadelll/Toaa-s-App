@@ -22,7 +22,7 @@ export default function Swipe() {
         className="mt-7 swipe h-96"
         data-aos="fade-up"
         data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="2000"
       >
         <h3
           className="font text-5xl text-left text-finalcolor pt-5 my-10 mx-auto"

@@ -49,7 +49,7 @@ export default function Footer() {
                   <ul className="list-unstyled">
                     <li>
                       <NavLink
-                        to={"/Home"}
+                        to={"/"}
                         className="text-topcolor hover:text-gray-400 font-semibold  pb-2 text-sm"
                       >
                         Home
