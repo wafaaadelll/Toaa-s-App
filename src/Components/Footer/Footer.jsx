@@ -49,6 +49,7 @@ export default function Footer() {
                   <ul className="list-unstyled">
                     <li>
                       <NavLink
+                        end
                         to={"/"}
                         className="text-topcolor hover:text-gray-400 font-semibold  pb-2 text-sm"
                       >
@@ -57,6 +58,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <NavLink
+                        end
                         to={"/Shop"}
                         className="text-topcolor hover:text-gray-400 font-semibold  pb-2 text-sm"
                       >
@@ -65,6 +67,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <NavLink
+                        end
                         to={"/Offer"}
                         className="text-topcolor hover:text-gray-400 font-semibold  pb-2 text-sm"
                       >
@@ -81,6 +84,7 @@ export default function Footer() {
                     <li>
                       <NavLink
                         to={"/About"}
+                        end
                         className="text-topcolor hover:text-gray-400 font-semibold  pb-2 text-sm"
                       >
                         About Us
@@ -90,6 +94,7 @@ export default function Footer() {
                     <li>
                       <NavLink
                         to={"/Contact"}
+                        end
                         className="text-topcolor hover:text-gray-400 font-semibold pb-2 text-sm"
                       >
                         Contact
